@@ -1,0 +1,117 @@
+case,hematopoietico,diagnostico,CD45,CD56,CD3,CD19
+55,sim,Diffuse Large B cell Lymphoma,294,2267,47,8656
+57,sim,B lymphoblastic lymphoma/leukemia,632,34.8,69,8526
+58,sim,B lymphoblastic lymphoma/leukemia,319,47,205,3059
+107,sim,Burkitt Lymphoma,83,86,81,4231
+206,sim,Burkitt Lymphoma,211,-33,75,40270
+266,sim,T lymphoblastic lymphoma,492,29,76,29
+292,sim,Burkitt Lymphoma,1595,25,405,6650
+357,sim,T lymphoblastic lymphoma,2788,333,1116,63
+360,sim,T lymphoblastic lymphoma,1834,38,1791,17.6
+448,sim,Burkitt Lymphoma,1080,134,113,15404
+452,sim,B lymphoblastic lymphoma/leukemia,2823,172,458,10940
+499,sim,histiocytic sarcoma,2368,1449,699,861
+516,sim,Burkitt Lymphoma,3390,70,84,3252
+543,sim,Anaplastic lymphoma,6351,20577,131,31
+563,sim,Burkitt Lymphoma,3389,243,165,13746
+690,sim,B lymphoblastic lymphoma/leukemia,468,604,676,22590
+735,sim,B lymphoblastic lymphoma,211,810,962,10724
+841,sim,T lymphoblastic lymphoma,973,145,8742,116
+842,sim,T lymphoblastic lymphoma,1314,94,8796,118
+854,sim,Anaplastic lymphoma,7773,70,9971,836
+928,sim,Hodgkin Lymphoma,2190,146,3753,759
+1182,sim,B lymphoblastic lymphoma/leukemia,415,33,613,7943
+1183,sim,B lymphoblastic lymphoma/leukemia,620,186,625,9869
+1252,sim,Burkitt Lymphoma,2568,277,-35,4797
+1253,sim,T lymphoblastic lymphoma,2928,11,9037,349
+1259,sim,T lymphoblastic lymphoma,1829,1438,1191,134
+1351,sim,histiocytosis,10216,249,826,828
+1430,sim,Diffuse Large B cell Lymphoma,1566,8421,104,15257
+1431,sim,Burkitt Lymphoma,5069,623,2317,6752
+1439,sim,Diffuse Large B cell Lymphoma,3878,21,542,5442
+1462,sim,T lymphoblastic lymphoma,2617,85,9306,60
+1475,sim,Anaplastic lymphoma,8920,20.5,7445,194
+1481,sim,T lymphoblastic lymphoma,1170,115,12564,362
+1484,sim,Hodgkin Lymphoma,4846,104,5474,14688
+1591,sim,Burkitt Lymphoma,2694,43,903,1996
+1606,sim,T lymphoblastic lymphoma,1488,283,2134,94
+1701,sim,T lymphoblastic lymphoma,1712,70,3828,43
+1925,sim,T lymphoblastic lymphoma,949,256,6371,70
+1952,sim,Anaplasic Large cell Lymphoma,2755,-73,358,468
+1965,sim,Burkitt Lymphoma,3981,27,1010,21207
+1988,sim,B lymphoblastic lymphoma/leukemia,325,188,430,3641
+2092,sim,T lymphoblastic lymphoma,3943,86853,10477,772
+2209,sim,non-hematopoietic solid tumor,1704,1019,668,1459
+2217,sim,Hodgkin Lymphoma,8774,0,-4225,904
+3,nao,neuroblastoma,530,26039,204,623
+4,nao,ganglioneuroblastoma,-82,17072,-86,691
+5,nao,neuroblastoma,30.8,62644,-297,260
+6,nao,neuroblastoma,15.7,33801,19,169
+8,nao,neuroblastoma,256,47301,325,50
+9,nao,neuroblastoma,100,42278,48.7,45.2
+10,nao,neuroblastoma,-84,34780,-1169,28
+11,nao,neuroblastoma,102,56730,104,99
+12,nao,neuroblastoma,42,97305,249,-8.2
+13,nao,neuroblastoma,-8,8825,-63,230
+15,nao,neuroblastoma,91,94610,105,-1041
+17,nao,neuroblastoma,-5.8,65033,-528,-1411
+18,nao,Extraesqueletal Ewing Sarcoma,16,18476,-506,91.7
+21,nao,Extraesqueletal Ewing Sarcoma,183,1603,253,268
+26,nao,rhabdomyosarcoma,18,3451,246,354
+28,nao,non-hematopoietic solid tumor,404,44098,194,62
+29,nao,wilms tumor,-173,48004,-100,-142
+30,nao,wilms tumor,193,3152,126,212
+31,nao,wilms tumor,73,16043,323,574
+32,nao,non-hematopoietic solid tumor,47,10460,107,227
+33,nao,non-hematopoietic solid tumor,98,3803,208,311.65
+34,nao,non-hematopoietic solid tumor,269,612,815,633
+36,nao,non-hematopoietic solid tumor,50,11192,70,343
+37,nao,non-hematopoietic solid tumor,-182,49637,301,-445
+39,nao,non-hematopoietic solid tumor,66,229,301,365
+233,nao,neuroblastoma,122,57892,-4.9,530
+561,nao,wilms tumor,878,10935,179,440
+611,nao,neuroblastoma,342,1513,378,84
+620,nao,non-hematopoietic solid tumor,-61,1821,3.2,-451
+643,nao,non-hematopoietic solid tumor,1355,9916,798,265
+650,nao,wilms tumor,358,12887,898,417
+662,nao,neuroblastoma,648,51392,52,113
+695,nao,neuroblastoma,623,68571,660,1215
+748,nao,non-hematopoietic solid tumor,403,3789,238,189
+850,nao,Extraesqueletal Ewing Sarcoma,299,58249,616,85
+871,nao,neuroblastoma,260,6945,734,498
+977,nao,non-hematopoietic solid tumor,897,279,84,275
+1031,nao,neuroblastoma,233,30669,328,132
+1043,nao,neuroblastoma,651,46076,48,33
+1074,nao,non-hematopoietic solid tumor,1409,1249,1502,1419
+1076,nao,neuroblastoma,326,51305,180,69
+1077,nao,neuroblastoma,811,5063,180,69
+1078,nao,neuroblastoma,615,3653,546,23
+1141,nao,neuroblastoma,501,77137,1043,672
+1142,nao,neuroblastoma,289,7343,497,418
+1144,nao,neuroblastoma,680,60716,981,560
+1239,nao,wilms tumor,500,35428,218,661
+1251,nao,neuroblastoma,619,8931,329,973
+1306,nao,wilms tumor,207,15934,632,212
+1323,nao,rhabdomyosarcoma,621,111482,40,-3
+1325,nao,rhabdomyosarcoma,590,10449,580,110
+1378,nao,ganglioneuroma,245,15442,426,311
+1445,nao,undifferentiated sarcoma,680,22985,123,1173
+1493,nao,wilms tumor,414,4970,1870,1870
+1500,nao,wilms tumor,516,21158,784,784
+1510,nao,neuroblastoma,272,594,44,542
+1512,nao,non-hematopoietic solid tumor,571,17124,1091,1091
+1611,nao,non-hematopoietic solid tumor,985,437,427,339
+1687,nao,rhabdomyosarcoma,610,9141,54,93
+1702,nao,renal carcinoma,365,7052,694,630
+1756,nao,non-hematopoietic solid tumor,667,43,175,175
+1762,nao,non-hematopoietic solid tumor,985,203,381,381
+1764,nao,non-hematopoietic solid tumor,572,20732,1523,1523
+1920,nao,neuroblastoma,98,68780,879,22
+1931,nao,neuroblastoma,470,56885,242,242
+1942,nao,wilms tumor,1560,2461,283,283
+1979,nao,neuroblastoma,434,21347,171,1187
+2042,nao,neuroblastoma,689,1432,633,-25
+2049,nao,non-hematopoietic solid tumor,505,13.9,83,19
+2180,nao,rhabdomyosarcoma,654,19098,357,19
+2204,nao,malignant nerve sheath tumor,827,36418,310,1717
+2236,nao,neurofibroma,767,18954,240,464

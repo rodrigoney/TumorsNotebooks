@@ -1,0 +1,1222 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{TumoresSolidos}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    Rodrigo Toscano Ney
+
+Relatório 1 - PESC - 19/07/2017
+
+\subsubsection{Objetivo :}\label{objetivo}
+
+\paragraph{O objetivo deste projeto é analisar a distribuição da base de
+dados de tumores sólidos
+pediátricos.}\label{o-objetivo-deste-projeto-uxe9-analisar-a-distribuiuxe7uxe3o-da-base-de-dados-de-tumores-suxf3lidos-pediuxe1tricos.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}196}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn.decomposition} \PY{k+kn}{import} \PY{n}{PCA}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn.cluster} \PY{k+kn}{import} \PY{n}{KMeans}
+          \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k+kn}{as} \PY{n+nn}{pd}
+          \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k+kn}{as} \PY{n+nn}{np}
+          \PY{k+kn}{import} \PY{n+nn}{matplotlib.pyplot} \PY{k+kn}{as} \PY{n+nn}{plt}
+          \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+\end{Verbatim}
+
+
+    \subsection{Pré processamento dos dados de
+Tumores}\label{pruxe9-processamento-dos-dados-de-tumores}
+
+\paragraph{São carregados dados dos
+marcadores:}\label{suxe3o-carregados-dados-dos-marcadores}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}197}]:} \PY{n}{tumors} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{train/tumores\PYZus{}20\PYZus{}06\PYZus{}2017\PYZus{}no\PYZus{}comma.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{encoding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{latin1}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{tumors}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}197}]:}      CASE NUMBER         sample            DISEASE               GROUP  \textbackslash{}
+          0             33           mass  Adrenal carcinoma   Adrenal carcinoma   
+          71           600             BM      neuroblastoma        disease free   
+          104          662           mass      neuroblastoma  Neuroblastic tumor   
+          113         1406           mass      neuroblastoma  Neuroblastic tumor   
+          148         1702           mass    renal carcinoma     renal carcinoma   
+          55          1513  ascitic fluid    germ cell tumor     germ cell tumor   
+          125           26          urine   rhabdomyosarcoma    rhabdomyosarcoma   
+          7             54     lymph node  Aplastic Lymphoma        no diagnosis   
+          65             3    mass formol      neuroblastoma  Neuroblastic tumor   
+          68            15             BM      neuroblastoma        disease free   
+          
+                Hematopoietico    Events:A  Visibility \%:A  BV421:A  CD10:A  CD105:A  \textbackslash{}
+          0                nao   29998.000           63.64      NaN  106.92      NaN   
+          71   livre de doenca       0.000             NaN      NaN     NaN      NaN   
+          104              nao    3086.000           21.81      NaN   93.64      NaN   
+          113              nao    1345.000           36.67      NaN     NaN      NaN   
+          148              nao   61011.000           76.57  8057.21  158.62     64.1   
+          55               nao  194214.000           58.01   661.55     NaN      NaN   
+          125              nao      17.192          100.00      NaN     NaN      NaN   
+          7    sem diagn¢stico       0.000             NaN      NaN     NaN      NaN   
+          65               nao     681.000           55.77      NaN  240.61      NaN   
+          68   livre de doenca       0.000             NaN      NaN     NaN      NaN   
+          
+                {\ldots}       FSC-A:T  FSC-H:T  GD2:T  HLADR:T   MPO:T  nuMIOGENIN:T  \textbackslash{}
+          0     {\ldots}      87120.90      NaN    NaN      NaN   97.69           NaN   
+          71    {\ldots}      69413.40  55419.5    NaN      NaN  146.88           NaN   
+          104   {\ldots}     101426.40  88832.0    NaN      NaN  154.09           NaN   
+          113   {\ldots}      84809.27  73473.0    NaN      NaN     NaN           NaN   
+          148   {\ldots}      40650.75  32704.5    NaN      NaN     NaN           NaN   
+          55    {\ldots}      83919.29  71168.0  50.79      NaN     NaN          62.3   
+          125   {\ldots}           NaN      NaN    NaN      NaN     NaN           NaN   
+          7     {\ldots}     107319.59      NaN    NaN      NaN     NaN           NaN   
+          65    {\ldots}      59264.21      NaN    NaN      NaN  132.74           NaN   
+          68    {\ldots}           NaN      NaN    NaN      NaN     NaN           NaN   
+          
+               nuMYOD:T  OCT3/4:T   SSC-A:T  SSC-H:T  
+          0         NaN       NaN   8618.40      NaN  
+          71        NaN       NaN   9876.29      NaN  
+          104       NaN       NaN   6753.89      NaN  
+          113       NaN       NaN  13599.36  10180.0  
+          148       NaN       NaN  13425.55   8711.5  
+          55        NaN       NaN   5901.12      NaN  
+          125       NaN       NaN       NaN      NaN  
+          7         NaN       NaN   8879.04      NaN  
+          65        NaN       NaN   7586.60      NaN  
+          68        NaN       NaN       NaN      NaN  
+          
+          [10 rows x 654 columns]
+\end{Verbatim}
+            
+    \paragraph{Pegamos do data frame apenas dados de tumores não
+hematopoieticos,
+inicialmente}\label{pegamos-do-data-frame-apenas-dados-de-tumores-nuxe3o-hematopoieticos-inicialmente}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}198}]:} \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors} \PY{o}{=} \PY{n}{tumors}\PY{p}{[}\PY{n}{tumors}\PY{o}{.}\PY{n}{Hematopoietico} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{nao}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{k}{del} \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{CASE NUMBER}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}198}]:}           sample                        DISEASE  \textbackslash{}
+          117         mass                  neuroblastoma   
+          113         mass                  neuroblastoma   
+          48          mass                germ cell tumor   
+          65   mass formol                  neuroblastoma   
+          103  mass(posQT)                  neuroblastoma   
+          41          mass           ganglioneuroblastoma   
+          144         mass                    wilms tumor   
+          61          mass           mesoblastic nephroma   
+          38          mass  Extraesqueletal Ewing Sarcoma   
+          114           BM                  neuroblastoma   
+          
+                                       GROUP Hematopoietico   Events:A  Visibility \%:A  \textbackslash{}
+          117             Neuroblastic tumor            nao   410263.0           75.72   
+          113             Neuroblastic tumor            nao     1345.0           36.67   
+          48                 germ cell tumor            nao     1579.0           15.51   
+          65              Neuroblastic tumor            nao      681.0           55.77   
+          103             Neuroblastic tumor            nao     3029.0           21.68   
+          41              Neuroblastic tumor            nao    44526.0           87.27   
+          144                    wilms tumor            nao  1107266.0           95.98   
+          61            mesoblastic nephroma            nao   846706.0           92.97   
+          38   Extraesqueletal Ewing Sarcoma            nao    84801.0           86.78   
+          114             Neuroblastic tumor            nao    26151.0            0.88   
+          
+               BV421:A  CD10:A  CD105:A  CD117:A   {\ldots}       FSC-A:T  FSC-H:T   GD2:T  \textbackslash{}
+          117   521.94     NaN  8964.97      NaN   {\ldots}      91791.16  78788.0  182.68   
+          113      NaN     NaN      NaN      NaN   {\ldots}      84809.27  73473.0     NaN   
+          48       NaN  104.77      NaN      NaN   {\ldots}      74623.83      NaN     NaN   
+          65       NaN  240.61      NaN   180.28   {\ldots}      59264.21      NaN     NaN   
+          103      NaN  163.56      NaN   685.33   {\ldots}     109197.00  95655.0     NaN   
+          41       NaN -109.93      NaN   196.41   {\ldots}     116437.95      NaN     NaN   
+          144  3368.45   95.16   414.91      NaN   {\ldots}      91755.30  76024.0   68.84   
+          61       NaN   14.09      NaN    41.18   {\ldots}      95452.17  82698.0     NaN   
+          38       NaN  125.86      NaN    51.56   {\ldots}      89457.91      NaN     NaN   
+          114   491.91     NaN      NaN      NaN   {\ldots}      82067.40  72516.0   66.73   
+          
+               HLADR:T     MPO:T  nuMIOGENIN:T  nuMYOD:T  OCT3/4:T   SSC-A:T  SSC-H:T  
+          117      NaN       NaN        119.24       NaN       NaN   8004.00   5996.0  
+          113      NaN       NaN           NaN       NaN       NaN  13599.36  10180.0  
+          48       NaN       NaN           NaN       NaN       NaN   9463.68      NaN  
+          65       NaN    132.74           NaN       NaN       NaN   7586.60      NaN  
+          103      NaN    157.73           NaN       NaN       NaN   9049.04      NaN  
+          41       NaN       NaN           NaN       NaN       NaN  14032.80      NaN  
+          144      NaN       NaN         62.06       NaN       NaN   5850.72      NaN  
+          61       NaN       NaN           NaN       NaN       NaN   9352.08      NaN  
+          38       NaN  15731.41           NaN       NaN       NaN  10125.50      NaN  
+          114      NaN       NaN        148.03       NaN       NaN   9820.80   7856.0  
+          
+          [10 rows x 653 columns]
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}199}]:} \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{o}{.}\PY{n}{describe}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}199}]:}            Events:A  Visibility \%:A       BV421:A        CD10:A      CD105:A  \textbackslash{}
+          count  7.900000e+01       79.000000     20.000000     56.000000    12.000000   
+          mean   1.317935e+05       45.995570   7008.040000   1074.790536  1220.787500   
+          std    2.788149e+05       36.649711  14664.139017   6027.646038  2512.201675   
+          min    2.194000e+00        0.000000    122.900000   -849.260000    64.100000   
+          25\%    2.676000e+03        8.600000    572.145000     72.117500   117.245000   
+          50\%    1.886300e+04       36.670000   1079.565000    157.965000   422.600000   
+          75\%    1.284760e+05       86.105000   3449.897500    346.790000   710.630000   
+          max    1.552006e+06      100.000000  58332.410000  45213.890000  8964.970000   
+          
+                     CD117:A       CD123:A       CD14:A        CD15:A       CD16:A  \textbackslash{}
+          count    43.000000     20.000000    23.000000      4.000000    19.000000   
+          mean    367.994186   2679.300000   820.174348   6141.592500   712.970526   
+          std     723.874660   4392.700064  1087.148069   6979.418317   705.658442   
+          min    -107.780000     91.640000  -462.970000    107.240000   171.430000   
+          25\%      74.590000    316.022500    16.960000    126.282500   274.250000   
+          50\%     156.740000   1079.370000   442.180000   5777.960000   353.160000   
+          75\%     301.635000   1894.635000  1171.180000  11793.270000   832.665000   
+          max    3747.630000  16884.920000  3599.610000  12903.210000  2593.010000   
+          
+                     {\ldots}             FSC-A:T        FSC-H:T        GD2:T      HLADR:T  \textbackslash{}
+          count      {\ldots}           67.000000      51.000000    27.000000    14.000000   
+          mean       {\ldots}        83756.114179   74307.735294   273.694074   429.749286   
+          std        {\ldots}        18359.825414   13937.102350   586.276938   367.661711   
+          min        {\ldots}        32801.850000   32704.500000    50.790000   111.520000   
+          25\%        {\ldots}        72724.480000   66410.000000    91.735000   228.182500   
+          50\%        {\ldots}        86071.450000   75684.500000   174.550000   349.535000   
+          75\%        {\ldots}        92395.660000   81894.750000   217.850000   471.137500   
+          max        {\ldots}       119606.310000  104300.000000  3181.200000  1583.560000   
+          
+                        MPO:T  nuMIOGENIN:T  nuMYOD:T  OCT3/4:T       SSC-A:T  \textbackslash{}
+          count     25.000000     14.000000      1.00       0.0     65.000000   
+          mean     757.073200    144.993571    206.16       NaN   9538.436462   
+          std     3119.922326     98.064005       NaN       NaN   2828.509136   
+          min       66.070000     43.470000    206.16       NaN   4304.300000   
+          25\%       98.940000     64.807500    206.16       NaN   7508.160000   
+          50\%      132.440000    135.120000    206.16       NaN   9340.900000   
+          75\%      163.410000    175.635000    206.16       NaN  10920.960000   
+          max    15731.410000    405.970000    206.16       NaN  16264.800000   
+          
+                      SSC-H:T  
+          count     18.000000  
+          mean    7188.027778  
+          std     1621.013340  
+          min     4950.000000  
+          25\%     5617.625000  
+          50\%     7653.500000  
+          75\%     8347.500000  
+          max    10180.000000  
+          
+          [8 rows x 649 columns]
+\end{Verbatim}
+            
+    \paragraph{Listamos quais são os grupos de tumores que temos
+dados}\label{listamos-quais-suxe3o-os-grupos-de-tumores-que-temos-dados}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}200}]:} \PY{k}{for} \PY{n}{key} \PY{o+ow}{in} \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{o}{.}\PY{n}{GROUP}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+              \PY{k}{print} \PY{n}{key}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Adrenal carcinoma
+chondrosarcoma
+cystic nephroma
+Extraesqueletal Ewing Sarcoma
+Neuroblastic tumor
+germ cell tumor
+vascular tumor
+mesoblastic nephroma
+sopharyngeal carcinoma
+normal kidney
+rhabdomyosarcoma
+thyroid-like follicular carcinoma of kidney
+undiferenciated malignt neoplasm
+wilms tumor
+osteosarcoma
+renal carcinoma
+
+    \end{Verbatim}
+
+    \paragraph{Fazemos então uma breve analise das colunas de marcadores,
+para descobrir quantos dados temos e quais são seus comportamentos
+estatísticos para cada grupo de
+tumor.}\label{fazemos-entuxe3o-uma-breve-analise-das-colunas-de-marcadores-para-descobrir-quantos-dados-temos-e-quais-suxe3o-seus-comportamentos-estatuxedsticos-para-cada-grupo-de-tumor.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}201}]:} \PY{n}{string\PYZus{}columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sample}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{DISEASE}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{GROUP}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Hematopoietico}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{n}{groups\PYZus{}statistics\PYZus{}list} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+          
+          \PY{k}{for} \PY{n}{key} \PY{o+ow}{in} \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{o}{.}\PY{n}{GROUP}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+              \PY{n}{grouped\PYZus{}tumor} \PY{o}{=} \PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{p}{[}\PY{n}{no\PYZus{}hematopoietic\PYZus{}tumors}\PY{o}{.}\PY{n}{GROUP} \PY{o}{==} \PY{n}{key}\PY{p}{]}
+              \PY{n}{df\PYZus{}group\PYZus{}result} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{)}
+              
+              \PY{n}{cur\PYZus{}index} \PY{o}{=} \PY{l+m+mi}{0}
+              \PY{k}{for} \PY{n}{column} \PY{o+ow}{in} \PY{n}{grouped\PYZus{}tumor}\PY{p}{:}
+                  \PY{k}{if} \PY{n}{column} \PY{o+ow}{not} \PY{o+ow}{in} \PY{n}{string\PYZus{}columns} \PY{o+ow}{and} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Visibility}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{not} \PY{o+ow}{in} \PY{n}{column} \PY{o+ow}{and} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Events}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{not} \PY{o+ow}{in} \PY{n}{column}\PY{p}{:}
+                      \PY{n}{my\PYZus{}group\PYZus{}colum} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{to\PYZus{}numeric}\PY{p}{(}\PY{n}{grouped\PYZus{}tumor}\PY{p}{[}\PY{n}{column}\PY{p}{]}\PY{p}{)}
+                      \PY{n}{qt\PYZus{}data} \PY{o}{=} \PY{n}{grouped\PYZus{}tumor}\PY{p}{[}\PY{n}{column}\PY{p}{]}\PY{o}{.}\PY{n}{size} \PY{o}{\PYZhy{}} \PY{n}{grouped\PYZus{}tumor}\PY{p}{[}\PY{n}{column}\PY{p}{]}\PY{o}{.}\PY{n}{isnull}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{p}{)}
+                      \PY{n}{qt\PYZus{}nulls} \PY{o}{=} \PY{n}{grouped\PYZus{}tumor}\PY{p}{[}\PY{n}{column}\PY{p}{]}\PY{o}{.}\PY{n}{isnull}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{p}{)}
+                      \PY{n}{mean} \PY{o}{=} \PY{l+m+mi}{0}
+                      \PY{n}{variance} \PY{o}{=} \PY{l+m+mi}{0}
+                      \PY{n}{c\PYZus{}min} \PY{o}{=} \PY{n+nb+bp}{None}
+                      \PY{n}{c\PYZus{}max} \PY{o}{=} \PY{n+nb+bp}{None}
+                      \PY{k}{if} \PY{n}{qt\PYZus{}data} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{:}
+                          \PY{n}{mean} \PY{o}{=} \PY{n}{my\PYZus{}group\PYZus{}colum}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}
+                          \PY{n}{c\PYZus{}min} \PY{o}{=} \PY{n}{my\PYZus{}group\PYZus{}colum}\PY{o}{.}\PY{n}{min}\PY{p}{(}\PY{p}{)}
+                          \PY{n}{c\PYZus{}max} \PY{o}{=} \PY{n}{my\PYZus{}group\PYZus{}colum}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+                          \PY{k}{if} \PY{n}{qt\PYZus{}data} \PY{o}{\PYZgt{}} \PY{l+m+mi}{1}\PY{p}{:}
+                              \PY{n}{variance} \PY{o}{=} \PY{n}{my\PYZus{}group\PYZus{}colum}\PY{o}{.}\PY{n}{var}\PY{p}{(}\PY{p}{)}
+          
+                      \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{grupo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{key}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{linhas}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{my\PYZus{}group\PYZus{}colum}\PY{o}{.}\PY{n}{size}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{marcador}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{column}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{dados}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{qt\PYZus{}data}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nulos}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{qt\PYZus{}nulls}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{min}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{c\PYZus{}min}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{max}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{c\PYZus{}max}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{media}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{mean}\PY{p}{,}
+                                           \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{variancia}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{variance}\PY{p}{\PYZcb{}}\PY{p}{,} 
+                                          \PY{n}{index}\PY{o}{=}\PY{p}{[}\PY{n}{cur\PYZus{}index}\PY{p}{]}\PY{p}{,}
+                                          \PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{grupo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{linhas}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{marcador}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{dados}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nulos}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{min}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{max}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{media}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{variancia}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+                      \PY{n}{df\PYZus{}group\PYZus{}result} \PY{o}{=} \PY{n}{df\PYZus{}group\PYZus{}result}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{data}\PY{p}{)}
+                      \PY{n}{cur\PYZus{}index} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+              \PY{n}{df\PYZus{}group\PYZus{}result}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{result/}\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{key}\PY{p}{)}\PY{o}{.}\PY{n}{replace}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZus{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{o}{.}\PY{n}{lower}\PY{p}{(}\PY{p}{)} \PY{o}{+} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZus{}statistics.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{groups\PYZus{}statistics\PYZus{}list}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{df\PYZus{}group\PYZus{}result}\PY{p}{)}
+              \PY{k}{print}\PY{p}{(}\PY{n}{df\PYZus{}group\PYZus{}result}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                 grupo  linhas      marcador  dados  nulos      min      max  \textbackslash{}
+244  Adrenal carcinoma       1        CD22:L      0      1     None     None   
+425  Adrenal carcinoma       1        CD44:N      0      1     None     None   
+10   Adrenal carcinoma       1  CD19+TCRGD:A      0      1     None     None   
+393  Adrenal carcinoma       1        MPO:MO      1      0  7081.26  7081.26   
+570  Adrenal carcinoma       1       BV421:T      0      1     None     None   
+349  Adrenal carcinoma       1       CD16:MO      0      1     None     None   
+549  Adrenal carcinoma       1    CD8+IgL:RC      0      1     None     None   
+590  Adrenal carcinoma       1         CD3:T      1      0  20047.1  20047.1   
+77   Adrenal carcinoma       1         CD3:B      1      0     1.77     1.77   
+581  Adrenal carcinoma       1        CD1a:T      0      1     None     None   
+
+        media  variancia  
+244      0.00          0  
+425      0.00          0  
+10       0.00          0  
+393   7081.26          0  
+570      0.00          0  
+349      0.00          0  
+549      0.00          0  
+590  20047.11          0  
+77       1.77          0  
+581      0.00          0  
+              grupo  linhas       marcador  dados  nulos      min      max  \textbackslash{}
+352  chondrosarcoma       1  CD19+TCRGD:MO      0      1     None     None   
+480  chondrosarcoma       1        CD38:NK      1      0    64.31    64.31   
+99   chondrosarcoma       1        cyCD3:B      0      1     None     None   
+41   chondrosarcoma       1         CD99:A      1      0   369.04   369.04   
+228  chondrosarcoma       1        BV421:L      0      1     None     None   
+15   chondrosarcoma       1         CD21:A      0      1     None     None   
+327  chondrosarcoma       1      cyCD3:MSC      0      1     None     None   
+44   chondrosarcoma       1      cyCD79a:A      0      1     None     None   
+511  chondrosarcoma       1       SSC-A:NK      1      0  15578.4  15578.4   
+284  chondrosarcoma       1        SSC-H:L      0      1     None     None   
+
+        media  variancia  
+352      0.00          0  
+480     64.31          0  
+99       0.00          0  
+41     369.04          0  
+228      0.00          0  
+15       0.00          0  
+327      0.00          0  
+44       0.00          0  
+511  15578.42          0  
+284      0.00          0  
+               grupo  linhas  marcador  dados  nulos     min     max  \textbackslash{}
+51   cystic nephroma       1     MPO:A      0      1    None    None   
+70   cystic nephroma       1    CD20:B      0      1    None    None   
+601  cystic nephroma       1    CD57:T      0      1    None    None   
+226  cystic nephroma       1   SSC-A:E      1      0  170453  170453   
+278  cystic nephroma       1   HLADR:L      1      0  740.76  740.76   
+155  cystic nephroma       1  CD99:END      0      1    None    None   
+154  cystic nephroma       1  CD90:END      0      1    None    None   
+368  cystic nephroma       1   CD44:MO      1      0    2756    2756   
+432  cystic nephroma       1     CD7:N      0      1    None    None   
+405  cystic nephroma       1    CD15:N      0      1    None    None   
+
+         media  variancia  
+51        0.00          0  
+70        0.00          0  
+601       0.00          0  
+226  170452.81          0  
+278     740.76          0  
+155       0.00          0  
+154       0.00          0  
+368    2756.00          0  
+432       0.00          0  
+405       0.00          0  
+                             grupo  linhas      marcador  dados  nulos  \textbackslash{}
+7    Extraesqueletal Ewing Sarcoma       3        CD16:A      1      2   
+613  Extraesqueletal Ewing Sarcoma       3  cyCD3+CD19:T      0      3   
+324  Extraesqueletal Ewing Sarcoma       3       CD9:MSC      0      3   
+177  Extraesqueletal Ewing Sarcoma       3        CD15:E      0      3   
+616  Extraesqueletal Ewing Sarcoma       3   Epcam+CD4:T      0      3   
+612  Extraesqueletal Ewing Sarcoma       3       cyCD3:T      2      1   
+56   Extraesqueletal Ewing Sarcoma       3       SSC-H:A      1      2   
+497  Extraesqueletal Ewing Sarcoma       3       CD99:NK      3      0   
+493  Extraesqueletal Ewing Sarcoma       3       CD81:NK      3      0   
+354  Extraesqueletal Ewing Sarcoma       3        CD2:MO      0      3   
+
+         min      max         media      variancia  
+7     303.93   303.93    303.930000       0.000000  
+613     None     None      0.000000       0.000000  
+324     None     None      0.000000       0.000000  
+177     None     None      0.000000       0.000000  
+616     None     None      0.000000       0.000000  
+612  4951.74  5174.03   5062.885000   24706.422050  
+56     15986    15986  15986.000000       0.000000  
+497    95.04   553.89    333.066667   52857.796633  
+493  1014.71  2769.94   1745.053333  835274.919633  
+354     None     None      0.000000       0.000000  
+                  grupo  linhas      marcador  dados  nulos      min      max  \textbackslash{}
+528  Neuroblastic tumor      36       CD21:RC      0     36     None     None   
+402  Neuroblastic tumor      36       CD117:N     17     19   126.32  1498.69   
+323  Neuroblastic tumor      36  CD8-CD99:MSC      1     35  1874.08  1874.08   
+49   Neuroblastic tumor      36         GD2:A     32      4   403.16   121184   
+36   Neuroblastic tumor      36     CD8+IgL:A     20     16  -124.09  1294.38   
+165  Neuroblastic tumor      36       MPO:END      4     32   218.03   342.19   
+130  Neuroblastic tumor      36      CD22:END      0     36     None     None   
+325  Neuroblastic tumor      36      CD90:MSC      0     36     None     None   
+178  Neuroblastic tumor      36        CD16:E      6     30  1790.17   8598.9   
+287  Neuroblastic tumor      36     CD105:MSC      0     36     None     None   
+
+            media     variancia  
+528      0.000000  0.000000e+00  
+402    371.945294  1.247825e+05  
+323   1874.080000  0.000000e+00  
+49   19888.836250  8.268694e+08  
+36     375.546500  1.492373e+05  
+165    277.580000  4.473167e+03  
+130      0.000000  0.000000e+00  
+325      0.000000  0.000000e+00  
+178   4623.618333  7.179924e+06  
+287      0.000000  0.000000e+00  
+               grupo  linhas      marcador  dados  nulos     min     max  \textbackslash{}
+19   germ cell tumor      10        CD28:A      0     10    None    None   
+457  germ cell tumor      10       CD10:NK      2      8   13.81  130.76   
+172  germ cell tumor      10        CD10:E      0     10    None    None   
+538  germ cell tumor      10        CD4:RC      0     10    None    None   
+605  germ cell tumor      10         CD8:T      0     10    None    None   
+580  germ cell tumor      10  CD19+TCRGD:T      2      8   44.01   135.6   
+184  germ cell tumor      10        CD20:E      0     10    None    None   
+127  germ cell tumor      10      CD20:END      1      9  666.76  666.76   
+372  germ cell tumor      10   CD56+IgK:MO      3      7  123.89  786.51   
+115  germ cell tumor      10      CD10:END      2      8 -238.26  963.02   
+
+          media      variancia  
+19     0.000000       0.000000  
+457   72.285000    6838.651250  
+172    0.000000       0.000000  
+538    0.000000       0.000000  
+605    0.000000       0.000000  
+580   89.805000    4194.364050  
+184    0.000000       0.000000  
+127  666.760000       0.000000  
+372  470.506667  110469.198233  
+115  362.380000  721536.819200  
+              grupo  linhas    marcador  dados  nulos     min     max   media  \textbackslash{}
+365  vascular tumor       2     CD34:MO      1      1  413.65  413.65  413.65   
+578  vascular tumor       2      CD19:T      0      2    None    None    0.00   
+180  vascular tumor       2  CD19\_CD4:E      0      2    None    None    0.00   
+156  vascular tumor       2   cyCD3:END      0      2    None    None    0.00   
+316  vascular tumor       2    CD57:MSC      0      2    None    None    0.00   
+554  vascular tumor       2     CD99:RC      0      2    None    None    0.00   
+484  vascular tumor       2      CD5:NK      0      2    None    None    0.00   
+54   vascular tumor       2    OCT3/4:A      0      2    None    None    0.00   
+279  vascular tumor       2       MPO:L      0      2    None    None    0.00   
+434  vascular tumor       2       CD8:N      0      2    None    None    0.00   
+
+     variancia  
+365        0.0  
+578        0.0  
+180        0.0  
+156        0.0  
+316        0.0  
+554        0.0  
+484        0.0  
+54         0.0  
+279        0.0  
+434        0.0  
+                    grupo  linhas     marcador  dados  nulos      min  \textbackslash{}
+411  mesoblastic nephroma       1        CD2:N      0      1     None   
+116  mesoblastic nephroma       1    CD105:END      0      1     None   
+418  mesoblastic nephroma       1       CD28:N      0      1     None   
+377  mesoblastic nephroma       1       CD8:MO      0      1     None   
+131  mesoblastic nephroma       1     CD24:END      0      1     None   
+480  mesoblastic nephroma       1      CD38:NK      1      0  2031.59   
+543  mesoblastic nephroma       1  CD56+IgK:RC      0      1     None   
+540  mesoblastic nephroma       1      CD45:RC      0      1     None   
+349  mesoblastic nephroma       1      CD16:MO      0      1     None   
+479  mesoblastic nephroma       1      CD34:NK      0      1     None   
+
+         max    media  variancia  
+411     None     0.00          0  
+116     None     0.00          0  
+418     None     0.00          0  
+377     None     0.00          0  
+131     None     0.00          0  
+480  2031.59  2031.59          0  
+543     None     0.00          0  
+540     None     0.00          0  
+349     None     0.00          0  
+479     None     0.00          0  
+                      grupo  linhas  marcador  dados  nulos      min      max  \textbackslash{}
+298  sopharyngeal carcinoma       1  CD20:MSC      0      1     None     None   
+412  sopharyngeal carcinoma       1    CD20:N      1      0   555.98   555.98   
+286  sopharyngeal carcinoma       1  CD10:MSC      0      1     None     None   
+228  sopharyngeal carcinoma       1   BV421:L      0      1     None     None   
+198  sopharyngeal carcinoma       1    CD45:E      1      0  6742.01  6742.01   
+23   sopharyngeal carcinoma       1    CD34:A      0      1     None     None   
+7    sopharyngeal carcinoma       1    CD16:A      0      1     None     None   
+70   sopharyngeal carcinoma       1    CD20:B      0      1     None     None   
+444  sopharyngeal carcinoma       1   EPCAM:N      1      0   224.61   224.61   
+131  sopharyngeal carcinoma       1  CD24:END      0      1     None     None   
+
+       media  variancia  
+298     0.00          0  
+412   555.98          0  
+286     0.00          0  
+228     0.00          0  
+198  6742.01          0  
+23      0.00          0  
+7       0.00          0  
+70      0.00          0  
+444   224.61          0  
+131     0.00          0  
+             grupo  linhas      marcador  dados  nulos      min      max  \textbackslash{}
+396  normal kidney       1     OCT3/4:MO      0      1     None     None   
+210  normal kidney       1         CD9:E      0      1     None     None   
+67   normal kidney       1  CD19+TCRGD:B      0      1     None     None   
+199  normal kidney       1         CD5:E      0      1     None     None   
+172  normal kidney       1        CD10:E      0      1     None     None   
+525  normal kidney       1        CD2:RC      0      1     None     None   
+161  normal kidney       1     FSC-A:END      0      1     None     None   
+590  normal kidney       1         CD3:T      1      0    23391    23391   
+541  normal kidney       1        CD5:RC      0      1     None     None   
+480  normal kidney       1       CD38:NK      1      0  5388.45  5388.45   
+
+        media  variancia  
+396      0.00          0  
+210      0.00          0  
+67       0.00          0  
+199      0.00          0  
+172      0.00          0  
+525      0.00          0  
+161      0.00          0  
+590  23391.03          0  
+541      0.00          0  
+480   5388.45          0  
+                grupo  linhas      marcador  dados  nulos      min      max  \textbackslash{}
+271  rhabdomyosarcoma       7  cyCD3+CD19:L      0      7     None     None   
+93   rhabdomyosarcoma       7     CD8+IgL:B      0      7     None     None   
+338  rhabdomyosarcoma       7    nuMYOD:MSC      0      7     None     None   
+430  rhabdomyosarcoma       7        CD57:N      3      4    93.49   175.72   
+424  rhabdomyosarcoma       7         CD4:N      1      6  1099.17  1099.17   
+582  rhabdomyosarcoma       7         CD2:T      0      7     None     None   
+206  rhabdomyosarcoma       7         CD8:E      1      6   335.42   335.42   
+245  rhabdomyosarcoma       7        CD24:L      0      7     None     None   
+487  rhabdomyosarcoma       7       CD57:NK      0      7     None     None   
+78   rhabdomyosarcoma       7        CD30:B      0      7     None     None   
+
+       media  variancia  
+271     0.00     0.0000  
+93      0.00     0.0000  
+338     0.00     0.0000  
+430   140.39  1790.8419  
+424  1099.17     0.0000  
+582     0.00     0.0000  
+206   335.42     0.0000  
+245     0.00     0.0000  
+487     0.00     0.0000  
+78      0.00     0.0000  
+                                           grupo  linhas        marcador  \textbackslash{}
+259  thyroid-like follicular carcinoma of kidney       1          CD57:L   
+337  thyroid-like follicular carcinoma of kidney       1  nuMIOGENIN:MSC   
+90   thyroid-like follicular carcinoma of kidney       1           CD7:B   
+521  thyroid-like follicular carcinoma of kidney       1         CD19:RC   
+4    thyroid-like follicular carcinoma of kidney       1         CD123:A   
+319  thyroid-like follicular carcinoma of kidney       1        CD71:MSC   
+274  thyroid-like follicular carcinoma of kidney       1     Epcam+CD4:L   
+404  thyroid-like follicular carcinoma of kidney       1          CD14:N   
+500  thyroid-like follicular carcinoma of kidney       1      cyCD79a:NK   
+103  thyroid-like follicular carcinoma of kidney       1     Epcam+CD4:B   
+
+     dados  nulos      min      max    media  variancia  
+259      0      1     None     None     0.00          0  
+337      0      1     None     None     0.00          0  
+90       0      1     None     None     0.00          0  
+521      0      1     None     None     0.00          0  
+4        0      1     None     None     0.00          0  
+319      0      1     None     None     0.00          0  
+274      1      0  2591.53  2591.53  2591.53          0  
+404      0      1     None     None     0.00          0  
+500      0      1     None     None     0.00          0  
+103      1      0   290.38   290.38   290.38          0  
+                                grupo  linhas    marcador  dados  nulos  \textbackslash{}
+313  undiferenciated malignt neoplasm       2     CD5:MSC      0      2   
+320  undiferenciated malignt neoplasm       2     CD8:MSC      0      2   
+512  undiferenciated malignt neoplasm       2    SSC-H:NK      1      1   
+359  undiferenciated malignt neoplasm       2     CD24:MO      0      2   
+558  undiferenciated malignt neoplasm       2    EPCAM:RC      0      2   
+566  undiferenciated malignt neoplasm       2   nuMYOD:RC      0      2   
+567  undiferenciated malignt neoplasm       2   OCT3/4:RC      0      2   
+408  undiferenciated malignt neoplasm       2  CD19\_CD4:N      0      2   
+5    undiferenciated malignt neoplasm       2      CD14:A      1      1   
+233  undiferenciated malignt neoplasm       2      CD14:L      1      1   
+
+        min     max    media  variancia  
+313    None    None     0.00        0.0  
+320    None    None     0.00        0.0  
+512    9528    9528  9528.00        0.0  
+359    None    None     0.00        0.0  
+558    None    None     0.00        0.0  
+566    None    None     0.00        0.0  
+567    None    None     0.00        0.0  
+408    None    None     0.00        0.0  
+5    116.92  116.92   116.92        0.0  
+233   -2.55   -2.55    -2.55        0.0  
+           grupo  linhas     marcador  dados  nulos      min      max  \textbackslash{}
+0    wilms tumor      10      BV421:A      1      9  3368.45  3368.45   
+281  wilms tumor      10     nuMYOD:L      4      6    68.93   159.51   
+370  wilms tumor      10       CD5:MO      2      8   286.44    764.1   
+325  wilms tumor      10     CD90:MSC      0     10     None     None   
+274  wilms tumor      10  Epcam+CD4:L      1      9   118.61   118.61   
+81   wilms tumor      10       CD38:B      2      8   420.73  1165.71   
+494  wilms tumor      10  CD8-CD99:NK      0     10     None     None   
+510  wilms tumor      10    OCT3/4:NK      0     10     None     None   
+578  wilms tumor      10       CD19:T      0     10     None     None   
+149  wilms tumor      10      CD8:END      0     10     None     None   
+
+         media      variancia  
+0    3368.4500       0.000000  
+281   113.6125    1413.378158  
+370   525.2700  114079.537800  
+325     0.0000       0.000000  
+274   118.6100       0.000000  
+81    793.2200  277497.600200  
+494     0.0000       0.000000  
+510     0.0000       0.000000  
+578     0.0000       0.000000  
+149     0.0000       0.000000  
+            grupo  linhas      marcador  dados  nulos    min    max  media  \textbackslash{}
+545  osteosarcoma       1       CD58:RC      0      1   None   None   0.00   
+531  osteosarcoma       1      CD271:RC      0      1   None   None   0.00   
+117  osteosarcoma       1     CD117:END      0      1   None   None   0.00   
+351  osteosarcoma       1   CD19\_CD4:MO      0      1   None   None   0.00   
+505  osteosarcoma       1        GD2:NK      1      0  81.53  81.53  81.53   
+304  osteosarcoma       1      CD28:MSC      0      1   None   None   0.00   
+367  osteosarcoma       1        CD4:MO      0      1   None   None   0.00   
+68   osteosarcoma       1        CD1a:B      0      1   None   None   0.00   
+299  osteosarcoma       1  CD20+CD4:MSC      0      1   None   None   0.00   
+260  osteosarcoma       1        CD58:L      0      1   None   None   0.00   
+
+     variancia  
+545          0  
+531          0  
+117          0  
+351          0  
+505          0  
+304          0  
+367          0  
+68           0  
+299          0  
+260          0  
+               grupo  linhas     marcador  dados  nulos      min      max  \textbackslash{}
+356  renal carcinoma       1  CD20+CD4:MO      1      0  6872.91  6872.91   
+277  renal carcinoma       1        GD2:L      0      1     None     None   
+433  renal carcinoma       1       CD71:N      0      1     None     None   
+386  renal carcinoma       1   cyCD79a:MO      0      1     None     None   
+428  renal carcinoma       1       CD56:N      1      0    88.82    88.82   
+362  renal carcinoma       1       CD3:MO      1      0   439.14   439.14   
+516  renal carcinoma       1     CD117:RC      0      1     None     None   
+170  renal carcinoma       1    SSC-H:END      0      1     None     None   
+175  renal carcinoma       1      CD123:E      0      1     None     None   
+16   renal carcinoma       1       CD22:A      0      1     None     None   
+
+       media  variancia  
+356  6872.91          0  
+277     0.00          0  
+433     0.00          0  
+386     0.00          0  
+428    88.82          0  
+362   439.14          0  
+516     0.00          0  
+170     0.00          0  
+175     0.00          0  
+16      0.00          0  
+
+    \end{Verbatim}
+
+    \subsection{KMeans Clustering:}\label{kmeans-clustering}
+
+\paragraph{Roda-se então um algoritmo de clustering chamado KMeans,
+dividindo os dados em
+grupos.}\label{roda-se-entuxe3o-um-algoritmo-de-clustering-chamado-kmeans-dividindo-os-dados-em-grupos.}
+
+\paragraph{Para isso, se cria um dataframe com todos os grupos e suas
+estatísticas.}\label{para-isso-se-cria-um-dataframe-com-todos-os-grupos-e-suas-estatuxedsticas.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}202}]:} \PY{n}{df\PYZus{}allgroup\PYZus{}result} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{grupo}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{linhas}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{marcador}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{dados}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{nulos}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{min}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{max}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{media}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{variancia}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+          
+          \PY{k}{for} \PY{n}{stat} \PY{o+ow}{in} \PY{n}{groups\PYZus{}statistics\PYZus{}list}\PY{p}{:}
+              \PY{n}{df\PYZus{}allgroup\PYZus{}result} \PY{o}{=} \PY{n}{df\PYZus{}allgroup\PYZus{}result}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{stat}\PY{p}{)}
+              
+          \PY{n}{df\PYZus{}allgroup\PYZus{}result}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}202}]:}                       grupo linhas      marcador dados nulos      min  \textbackslash{}
+          287          vascular tumor      2     CD105:MSC     0     2     None   
+          147         renal carcinoma      1       CD7:END     0     1     None   
+          271         germ cell tumor     10  cyCD3+CD19:L     4     6   -133.8   
+          164         renal carcinoma      1     HLADR:END     0     1     None   
+          478           normal kidney      1      CD309:NK     1     0    41.63   
+          463             wilms tumor     10       CD16:NK     0    10     None   
+          452  sopharyngeal carcinoma      1      nuMYOD:N     1     0  1110.88   
+          90            normal kidney      1         CD7:B     0     1     None   
+          438        rhabdomyosarcoma      7         CD9:N     3     4   240.34   
+          104          vascular tumor      2       FSC-A:B     1     1  50436.9   
+          
+                   max         media    variancia  
+          287     None      0.000000            0  
+          147     None      0.000000            0  
+          271  3312.88   1794.937500  2.10646e+06  
+          164     None      0.000000            0  
+          478    41.63     41.630000            0  
+          463     None      0.000000            0  
+          452  1110.88   1110.880000            0  
+          90      None      0.000000            0  
+          438  1070.92    599.353333       181967  
+          104  50436.9  50436.900000            0  
+\end{Verbatim}
+            
+    \paragraph{Como teste inicial, focamos apenas no anticorpo CD10:A.
+Escolhemos apenas grupos que tenham pelo menos 1 linha com dados desse
+anticorpo.}\label{como-teste-inicial-focamos-apenas-no-anticorpo-cd10a.-escolhemos-apenas-grupos-que-tenham-pelo-menos-1-linha-com-dados-desse-anticorpo.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}203}]:} \PY{n}{df\PYZus{}kmeans\PYZus{}1} \PY{o}{=} \PY{n}{df\PYZus{}allgroup\PYZus{}result}\PY{p}{[}\PY{n}{df\PYZus{}allgroup\PYZus{}result}\PY{o}{.}\PY{n}{marcador} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{CD10:A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{n}{df\PYZus{}kmeans\PYZus{}1} \PY{o}{=} \PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{[}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{dados} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{]}
+          \PY{k}{del} \PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{marcador}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+          \PY{n}{df\PYZus{}kmeans\PYZus{}1} \PY{o}{=} \PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{set\PYZus{}index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{grupo}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}203}]:}                               linhas dados nulos      min      max  \textbackslash{}
+          grupo                                                                
+          renal carcinoma                    1     1     0   158.62   158.62   
+          osteosarcoma                       1     1     0   305.83   305.83   
+          wilms tumor                       10     9     1    69.95   962.87   
+          mesoblastic nephroma               1     1     0    14.09    14.09   
+          cystic nephroma                    1     1     0  1818.79  1818.79   
+          Adrenal carcinoma                  1     1     0   106.92   106.92   
+          Extraesqueletal Ewing Sarcoma      3     2     1   125.86   505.78   
+          chondrosarcoma                     1     1     0   493.96   493.96   
+          vascular tumor                     2     2     0   432.54  3120.43   
+          Neuroblastic tumor                36    21    15  -849.26    385.2   
+          
+                                               media    variancia  
+          grupo                                                    
+          renal carcinoma                 158.620000            0  
+          osteosarcoma                    305.830000            0  
+          wilms tumor                     254.547778      78415.3  
+          mesoblastic nephroma             14.090000            0  
+          cystic nephroma                1818.790000            0  
+          Adrenal carcinoma               106.920000            0  
+          Extraesqueletal Ewing Sarcoma   315.820000      72169.6  
+          chondrosarcoma                  493.960000            0  
+          vascular tumor                 1776.485000  3.61238e+06  
+          Neuroblastic tumor               64.823810      58347.9  
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}204}]:} \PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{shape}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}204}]:} (15, 7)
+\end{Verbatim}
+            
+    \paragraph{Treinamos e rodamos o kmeans, definindo numero de clusters
+desde 20\% a 50\% do número de grupos possiveis, para analisar sua
+accurácia.}\label{treinamos-e-rodamos-o-kmeans-definindo-numero-de-clusters-desde-20-a-50-do-nuxfamero-de-grupos-possiveis-para-analisar-sua-accuruxe1cia.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}211}]:} \PY{n}{len\PYZus{}groups} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+          
+          \PY{n}{init\PYZus{}clusters} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n}{len\PYZus{}groups}\PY{o}{*}\PY{l+m+mf}{0.2}\PY{p}{)}
+          \PY{n}{end\PYZus{}clusters} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n}{len\PYZus{}groups}\PY{o}{*}\PY{l+m+mf}{0.75}\PY{p}{)}
+          \PY{n}{scores} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+          \PY{k}{for} \PY{n}{k} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{init\PYZus{}clusters}\PY{p}{,} \PY{n}{end\PYZus{}clusters}\PY{p}{)}\PY{p}{:}
+              \PY{n}{k\PYZus{}means} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{n}{k}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+              \PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}
+              \PY{n}{scores}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}212}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n+nb}{range}\PY{p}{(}\PY{n}{init\PYZus{}clusters}\PY{p}{,} \PY{n}{end\PYZus{}clusters}\PY{p}{)}\PY{p}{,} \PY{n}{scores}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Numero de clusters}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Distancias aos clusters}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}212}]:} <matplotlib.text.Text at 0x27d74bd0>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}213}]:} \PY{n}{k\PYZus{}means} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{l+m+mi}{3}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{max\PYZus{}iter}\PY{o}{=}\PY{l+m+mi}{2000}\PY{p}{)}
+          \PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}
+          
+          \PY{n}{prediction} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+          \PY{k}{print} \PY{n}{prediction}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+grupo
+Adrenal carcinoma                   2
+chondrosarcoma                      2
+cystic nephroma                     2
+Extraesqueletal Ewing Sarcoma       2
+Neuroblastic tumor                  2
+germ cell tumor                     2
+vascular tumor                      1
+mesoblastic nephroma                2
+sopharyngeal carcinoma              2
+normal kidney                       2
+rhabdomyosarcoma                    2
+undiferenciated malignt neoplasm    0
+wilms tumor                         2
+osteosarcoma                        2
+renal carcinoma                     2
+dtype: int32
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}214}]:} \PY{n}{k\PYZus{}means} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{max\PYZus{}iter}\PY{o}{=}\PY{l+m+mi}{2000}\PY{p}{)}
+          \PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}
+          
+          \PY{n}{prediction} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+          \PY{k}{print} \PY{n}{prediction}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+grupo
+Adrenal carcinoma                   3
+chondrosarcoma                      3
+cystic nephroma                     3
+Extraesqueletal Ewing Sarcoma       0
+Neuroblastic tumor                  0
+germ cell tumor                     3
+vascular tumor                      1
+mesoblastic nephroma                3
+sopharyngeal carcinoma              3
+normal kidney                       3
+rhabdomyosarcoma                    0
+undiferenciated malignt neoplasm    2
+wilms tumor                         0
+osteosarcoma                        3
+renal carcinoma                     3
+dtype: int32
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}215}]:} \PY{n}{k\PYZus{}means} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{max\PYZus{}iter}\PY{o}{=}\PY{l+m+mi}{2000}\PY{p}{)}
+          \PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}
+          
+          \PY{n}{prediction} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+          \PY{k}{print} \PY{n}{prediction}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+grupo
+Adrenal carcinoma                   4
+chondrosarcoma                      4
+cystic nephroma                     4
+Extraesqueletal Ewing Sarcoma       2
+Neuroblastic tumor                  2
+germ cell tumor                     4
+vascular tumor                      1
+mesoblastic nephroma                4
+sopharyngeal carcinoma              4
+normal kidney                       0
+rhabdomyosarcoma                    2
+undiferenciated malignt neoplasm    3
+wilms tumor                         2
+osteosarcoma                        4
+renal carcinoma                     4
+dtype: int32
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}218}]:} \PY{n}{k\PYZus{}means} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{l+m+mi}{6}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{max\PYZus{}iter}\PY{o}{=}\PY{l+m+mi}{2000}\PY{p}{)}
+          \PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}
+          
+          \PY{n}{prediction} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+          \PY{k}{print} \PY{n}{prediction}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+grupo
+Adrenal carcinoma                   3
+chondrosarcoma                      3
+cystic nephroma                     3
+Extraesqueletal Ewing Sarcoma       5
+Neuroblastic tumor                  0
+germ cell tumor                     0
+vascular tumor                      1
+mesoblastic nephroma                3
+sopharyngeal carcinoma              3
+normal kidney                       4
+rhabdomyosarcoma                    5
+undiferenciated malignt neoplasm    2
+wilms tumor                         5
+osteosarcoma                        3
+renal carcinoma                     3
+dtype: int32
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}217}]:} \PY{n}{k\PYZus{}means} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{l+m+mi}{7}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{max\PYZus{}iter}\PY{o}{=}\PY{l+m+mi}{2000}\PY{p}{)}
+          \PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}
+          
+          \PY{n}{prediction} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{k\PYZus{}means}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{p}{)}\PY{p}{,} \PY{n}{index}\PY{o}{=}\PY{n}{df\PYZus{}kmeans\PYZus{}1}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+          \PY{k}{print} \PY{n}{prediction}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+grupo
+Adrenal carcinoma                   0
+chondrosarcoma                      0
+cystic nephroma                     0
+Extraesqueletal Ewing Sarcoma       3
+Neuroblastic tumor                  3
+germ cell tumor                     6
+vascular tumor                      1
+mesoblastic nephroma                0
+sopharyngeal carcinoma              0
+normal kidney                       5
+rhabdomyosarcoma                    4
+undiferenciated malignt neoplasm    2
+wilms tumor                         4
+osteosarcoma                        0
+renal carcinoma                     0
+dtype: int32
+
+    \end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
