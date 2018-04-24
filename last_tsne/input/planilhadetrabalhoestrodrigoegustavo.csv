@@ -1,0 +1,319 @@
+casenumber,sample,Mass,atdiagnosis,stage,histopathology,disease,cytometry,Neventos,viabilidade,celtumoral,celimune,CD45MFI,CD56MFIPECy7,GD2total,CD99total,CD271MFItotal,MYODMYOGtotal,EPCAMtotal,CD9MFI,CD10MFI,CD34MFI,CD38MFI,CD57MFI,CD58MFI,CD81MFI,CD90MFI,CD117MFI
+1,abdominal,yes,no, ,neuroblastoma,neuroblastoma,neuroblastoma,"153,916",06,010,90,-243,"22,578",,-02,,,105,"4,982",-920,"1,852",-16,51,133,"1,001","5,835",159
+2,BM,no, ,metastatic,disease free,neuroblastoma,disease free,"150,000",96,000,100,,,,,,,,,,,,,,,,
+3,abdominal,yes,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"1,777,355",07,077,23,530,"26,039","1,616",424,283,996,875,"7,132",136,"2,503",209,625,622,"4,489","5,433",229
+4,abdominal,yes,yes,local,ganglioneuroblastoma,ganglioneuroblastoma,neuroblastoma,"450,000",13,093,07,-82,"17,072",,-236,,29,"1,024","23,361",-83,,-77,981,,"10,429","2,680",262
+5,abdominal,yes,yes, ,neuroblastoma,neuroblastoma,neuroblastoma,"408,081",52,006,94,31,"62,644","24,008",95,"-2,677",309,-163,"2,081",-47,"1,944","-2,850","4,998",199,"3,567","4,130","1,290"
+6,lymph node,yes, ,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"382,319",93,010,90,16,"33,801",,50,,,-68,909,-12,206,519,969,98,"3,727","3,182",226
+7,PB,no,yes,metastatic, ,neuroblastoma,disease free,"300,000",95,000,100,-12,923,,,,,,,,,,,,,,
+8,abdominal,yes,yes,local,adrenal carcinoma,adrenal carcinoma,non-hematopoietic solid tumor,"400,000",70,083,17,98,"3,803",,,366,,,"1,954",128,633,-104,127,"1,143",-06,"2,678",101
+8,head and neck,yes,yes, ,neuroblastoma,neuroblastoma,neuroblastoma,"152,397",44,027,73,256,"47,301","18,366",258,339,267,126,"2,752",147,"1,097",-10,579,830,"10,749","2,303",942
+9,BM,no, ,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"800,000",79,041,59,100,"42,278","11,086",138,"-1,843",,02,"3,224",34,743,"-1,905",118,276,"5,848","4,044",71
+10,BM,no,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"1,000,000",69,002,98,-84,"34,780","33,111",447,215,86,-64,681,158,51,78,"17,777",814,"6,927","5,956",176
+11,BM,no,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"750,000",73,007,93,102,"56,730","57,194",125,-232,239,55,745,82,46,-171,834,307,"2,665","3,570","1,739"
+12,BM,no,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"811,780",76,033,67,42,"97,305","69,114",70,-438,92,23,"2,841",95,-621,-387,45,214,"7,011","2,519",297
+13,BM,no,no,metastatic,disease free,neuroblastoma,neuroblastoma,"500,000",80,001,99,-08,"8,825",,504,,,"-2,183","16,179",297,"-3,193",923,"-1,055","3,881","27,195","10,998",50
+15,BM,no,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"366,514",88,002,98,91,"94,610","58,386",158,192,339,109,"35,095",162,,39,393,396,"9,680","1,635",121
+17,BM,no,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"485,445",67,005,95,-06,"65,033","35,705",65,-30,137,-26,"12,822",09,-02,-60,"1,008",207,"8,062","2,021",-178
+18,thoracoabdominal,yes,yes, ,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,"160,194",35,028,72,16,"18,476",1487,631,"1,131",919,162,"11,820",650,246,218,"2,085","2,387","5,263","2,609",131
+19,BM,no, ,metastatic,disease free,Extraesqueletal Ewing Sarcoma,disease free,"722,383",71,000,100,,,,,,,,,,,,,,,,
+20,PB,no, , , ,Extraesqueletal Ewing Sarcoma, ,"760,125",60,000,100,,,,,,,,,,,,,,,,
+21,thoracoabdominal,yes,yes,metastatic,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,"430,796",53,087,13,183,"1,603",446,6280,"4,154",490,131,"1,762",162,"1,413",307,228,"1,383","28,988","6,003",197
+22,BM,no, , ,disease free,Extraesqueletal Ewing Sarcoma,disease free,"1,800,000",44,000,100,,,,,,,,,,,,,,,,
+22,soft tissue mass,yes,yes,reactive,reactive,reactive,reactive,"300,000",10,000,100,"1,307","6,493",,,31,,,,,,,,,,,
+23,pelvic,yes,no, ,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"350,000",21,085,15,48,"1,355",,274,,,75,180,02,,749,171,405,"14,428","16,360",20
+24,pelvic,yes, ,metastatic,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"88,512",02,100,00,11,"5,289",,106,,,43,,,,57,40,120,,,41
+25,pelvic,yes, , ,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"5,076",13,100,,85,781,,299,,22416,247,833,,,168,46,179,427,"1,088",82
+26,urine,no,yes,metastatic,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"350,000",05,100,00,18,"3,451",,84,136,61977,126,289,304,249,98,91,168,108,238,219
+27,urine,no,yes,local,disease free,rhabdomyosarcoma,disease free,"191,881",55,000,100,,,,,,,,,,,,,,,,
+28,head and neck,yes,yes,local,undiferenciated malignant neoplasm,undiferenciated malignant neoplasm,soft tissue sarcoma,"550,000",04,070,31,404,"44,098",,,"3,921",,,"7,789","2,417","1,322",721,"3,173",793,"4,860",629,163
+29,abdominal,yes,yes,local,wilms tumor,wilms tumor,wilms tumor,"518,975",84,097,03,-173,"48,004",157,264,"2,005",526,"3,082","1,295",94,687,15,678,,"8,865",278,
+30,abdominal,yes,no,local,wilms tumor,wilms tumor,wilms tumor,"870,725",27,087,14,193,"3,152",169,173,810,99,"2,089","1,835",244,591,36,106,,535,236,
+31,thoracic,yes,no,metastatic,wilms tumor,wilms tumor,wilms tumor,"88,462",06,098,02,73,"16,043",693,327,,408,"3,587","24,758",481,"5,343",457,655,"2,526","8,786","1,015",199
+32,head and neck,yes,yes,local,nasopharyngeal carcinoma,nasopharyngeal carcinoma,non-hematopoietic solid tumor,"189,020",64,069,01,47,"10,460",,,550,,,"5,833",623,135,716,82,608,"4,691",91,167
+34,abdominal,yes,yes,local,hemangioperycitoma,hemangioperycitoma,vascular tumor,"48,000",43,000,05,269,612,,,167,224,,"1,676",631,"7,220",470,291,"3,274",659,486,601
+36,abdominal,yes,yes,local,germ cell,germ cell,non-hematopoietic solid tumor,"800,000",10,034,66,51,"11,192",,,"1,774",,,"1,631",166,"1,074",199,780,784,"6,314","3,181",269
+37,abdominal,yes,yes, ,germ cell,germ cell,non-hematopoietic solid tumor,"800,000",10,016,84,-182,"49,637",,,"1,777",,,"18,303",232,-23,430,92,,"19,227","7,349",
+38,ascitic fluid,no, ,metastatic,germ cell,germ cell,no diagnosis,"681,305",20,000,100,,,,,,,,,,,,,,,,
+39,abdominal,yes,yes,local,germ cell,germ cell,non-hematopoietic solid tumor,"121,897",30,065,35,,,,,,,,,,,,,,,,
+40,soft tissue mass,yes,yes,local,neoplasia fibrohistiocitaria cutanea do tipo misto,neoplasia fibrohistiocitaria cutanea do tip,reactive,"8,996",57,000,70,695,121,,,31,,,,,,,,,,,
+41,lymph node,yes,yes,reactive,reactive,reactive,reactive,"500,000",42,000,100,"2,019",353,,,,,,,,,,,,,,
+42,lymph node,yes,yes,reactive,reactive,reactive,reactive,"300,000",53,000,100,"1,767",311,,,,,,,,,,,,,,
+43,abdominal,yes,yes,reactive,reactive,reactive,reactive,"118,665",06,000,100,49,135,,,,,,,,,,,,,,
+44,abdominal,yes,yes,reactive,reactive,reactive,reactive,"50,000",15,000,100,,,,,,,,,,,,,,,,
+45,lymph node,yes,yes,reactive,reactive,reactive,reactive,"413,425",93,000,100,"2,045",178,,,,,,,,,,,,,,
+47,lymph node,yes,yes,reactice,reactive,reactive,reactive,"50,000",89,000,100,"2,198",643,,,,,,,,,,,,,,
+47,PB,no, , , ,reactive, ,"255,566",89,000,100,,,,,,,,,,,,,,,,
+48,thoracic,yes,yes,reactive,reactive,reactive,reactive,"600,000",73,000,100,,,,,,,,,,,,,,,,
+50,lymph node,yes,yes,reactive,reactive,reactive,reactive,"300,000",46,000,100,468,"10,472",,,,,,,,,,,,,,
+51,lymph node,yes,yes,reactive,reactive,reactive,reactive,"100,000",57,000,100,162,"6,077",,,,,,,,,,,,,,
+53,lymph node,yes,yes,reactive,reactive,reactive,reactive,"128,088",07,000,100,"1,146","13,130",,,,,,,,,,,,,,
+54,thoracic,yes,yes,local,Anaplastic lymphoma,Anaplastic lymphoma,no diagnosis,"419,850",86,000,100,,,,,,,,,,,,,,,,
+55,lymph node,yes,yes, ,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,"549,703",42,069,31,294,"2,267",,,186,,,"1,921","1,866",627,"16,533",52,821,"14,187",360,-126
+56,BM,no, ,local,disease free,Diffuse Large B cell Lymphoma,disease free,"450,000",56,000,100,,,,,,,,,,,,,,,,
+57,lymph node,yes, , ,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"783,748",84,066,34,632,35,,,191,,,"2,612",60,461,"6,292",59,"2,275","1,031",63,49
+58,BM,no,yes,metastatic,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"552,164",39,096,04,447,47,,,27,,,955,-03,438,"6,067",51,"1,452",732,29,28
+59,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"613,054",63,000,100,,,,,,,,,,,,,,,,
+61,thoracic,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"263,113",42,000,100,,,,,,,,,,,,,,,,
+62,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"200,000",83,000,100,,,,,,,,,,,,,,,,
+63,BM,no,yes,local,disease free,Hodgkin Lymphoma,disease free,"200,000",68,000,100,,,,,,,,,,,,,,,,
+64,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"18,874",24,000,100,,,,,,,,,,,,,,,,
+107,abdominal,yes,yes, ,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"652,380",63,007,17,83,86,,,32,,,626,"4,111",123,"10,035",112,-276,31,116,52
+108,BM,no, ,metastatic,disease free,Burkitt Lymphoma,disease free,"360,000",83,000,100,,,,,,,,,,,,,,,,
+118,PB,no,yes,metastatic, ,EBV related lymphoma,EBV related lymphoma,"1,600,000",72,076,24,165,636,,,13,,,13,40,102,,173,,636,260,12
+206,ascitic fluid,no,yes,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"1,100,000",82,096,04,211,-33,,,35,,,"25,495","1,708",659,"20,512",96,749,"12,149",75,-106
+233,BM,no,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"717,175",75,018,82,122,"57,892","5,635",-16,699,86,648,"6,377",45,"1,071",634,383,189,"12,133","1,526",
+266,BM,no,yes,local,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"400,000",51,056,44,492,29,,,,,,,,185,,,,,,57
+270,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"760,561",90,000,100,,,,,,,,,,,,,,,,
+275,BM,no,yes,local,disease free,neuroblastoma,disease free,"900,000",60,000,100,,,,,,,,,,,,,,,,-153
+277,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"150,000",46,000,100,,,,,,,,,,,,,,,,
+292,abdominal,yes,yes,local,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"1,413,875",62,032,68,"4,932",99,,,21,,,"33,317",620,250,"5,278",52,395,"3,832",62,-44
+350,BM,no, , ,disease free,T lymphoblastic lymphoma,disease free,"200,000",42,000,100,,,,,,,,,,,,,,,,
+357,lymph node,yes,yes,local,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"900,000",26,093,07,"3,203",300,,,,,,,,674,,41,,,,30
+360,pleural effusion,no, , ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"1,800,000",57,091,09,"1,834",38,,,,,,,,191,,75,,,,52
+361,BM,no,yes,local,disease free,T lymphoblastic lymphoma,disease free,"300,000",44,000,100,,,,,,,,,,,,,,,,
+437,lymph node,yes,yes,reactive,reactive,reactive,reactive,"775,851",76,000,100,"1,592","16,501",,,68,,,,,,,,,,,
+442,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"771,432",48,000,100,,,,,,,,,,,,,,,,
+448,BM,no,yes,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"750,000",66,066,35,"1,080",134,,,,,,,"4,685",-636,"12,500",,,,,
+452,pleural effusion,no,yes, ,disease free,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"600,000",69,036,64,"3,840",172,,,,,,,840,"1,062","10,445",,,,,
+453,BM,no, ,local,disease free,B lymphoblastic lymphoma/leukemia,disease free,"300,000",82,000,100,,,,,,,,,,,,,,,,
+463,lymph node,yes,yes,reactive,reactive,reactive,reactive,"200,000",64,000,100,"5,581","15,809",,,,,,,,,,,,,,
+489,lymph node,yes,yes,reactive,reactive,reactive,reactive,"97,396",89,000,100,"4,369","13,874",,,,,,,,,,,,,,
+490,PB,no,yes,reactive, ,reactive, ,"200,000",36,000,100,,,,,,,,,,,,,,,,
+499,BM,no, ,metastatic,histiocytic sarcoma,histiocytic sarcoma,histiocytic sarcoma,"300,000",83,027,73,"2,102","1,449",,,,,,,,,,,,,,
+516,ascitic fluid,no,yes,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"1,110,000",60,076,24,"2,297",70,,,,,,,793,434,"4,850",,,,,
+543,lymph node,yes,yes,local,Anaplastic lymphoma,Anaplastic lymphoma,Anaplastic lymphoma,"336,054",34,003,97,"6,352","20,577",,,,,,,105,353,,,,,,
+548,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"400,000",90,000,100,,,,,,,,,,,,,,,,
+551,pleural effusion,no, ,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"700,000",85,000,100,,,,,,,,,,,,,,,,
+554,BM,no,yes, ,disease free,Hodgkin Lymphoma,disease free,"200,000",54,000,100,,,,,,,,,,,,,,,,
+561,abdominal,yes,no,local,wilms tumor,wilms tumor,wilms tumor,"200,000",36,069,31,900,"12,413","3,476",94,"7,313",620,"11,623","2,274","1,044",,,316,"1,086","3,435","1,224",157
+562,abdominal,yes,yes, ,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"8,502",01,015,86,"17,272","1,352",,,,,,,,,,,,,,
+563,ascitic fluid,no, ,local,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"22,594",07,003,97,"3,391",241,,,,,,503,"3,313",,"19,213",,,"14,647",,
+565,BM,no, , ,disease free,Burkitt Lymphoma,disease free,"600,000",27,000,100,,,,,,,,,,,,,,,,
+581,BM,no, , ,disease free,neuroblastoma,disease free,"600,000",83,000,100,,,,,,,,,,,,,,,,
+599,BM,no, , ,disease free,neuroblastoma,disease free,"1,300,000",79,000,100,,,,,,,,,,,,,,,,
+600,BM,no,yes,local,disease free,neuroblastoma,disease free,"1,300,000",70,000,100,,,,,,,,,,,,,,,,
+609,BM,no,no, ,disease free,histiocytic sarcoma,disease free,"1,229,908",47,000,100,,,,,,,,,,,,,,,,
+611,abdominal,yes,no, ,neuroblastoma,neuroblastoma,neuroblastoma,"643,762",36,076,24,342,"1,712","1,179",322,932,336,304,"3,386",216,"1,049",,94,"1,433","5,756","1,052",224
+612,PB,no, ,metastatic, ,neuroblastoma,disease free,"600,000",65,000,100,,,,,,,,,,,,,,,,
+620,abdominal,yes,yes,local,hepatoblastoma,hepatoblastoma,no diagnosis,"116,444",07,043,58,,,,,,,,,,,,,,,,
+630,abdominal,yes,no,local,neuroblastoma,neuroblastoma,neuroblastoma,"1,300,000",35,087,14,625,"21,139","1,037",511,279,699,427,"15,101",179,"1,328",342,"1,324","2,327","5,360","4,867",935
+630,PB,no, , , ,neuroblastoma,disease free,"650,910",64,000,100,940,"28,377",,,,,,,,,,,,,,
+643,soft tissue mass,yes,yes,local,chondrosarcoma,chondrosarcoma,non-hematopoietic solid tumor,"712,866",50,088,12,"1,032","5,209",,,766,,,"53,721",563,"1,301",127,440,"2,453","12,911","10,914",459
+646,BM,no,yes,local,disease free,B lymphoblastic lymphoma/leukemia,disease free,"208,602",76,000,100,,,,,,,,,,,,,,,,
+650,abdominal,yes,yes,local,wilms tumor,wilms tumor,wilms tumor,"413,042",35,073,28,870,"20,788",983,436,614,366,"12,335","3,694",350,616,,"1,039",804,"4,547",614,405
+651,BM,no,yes,metastatic,disease free,neuroblastoma,disease free,"3,300,000",85,000,100,,,,,,,,,,,,,,,,
+661,BM,no, , ,disease free,neuroblastoma,disease free,"100,000",82,000,100,,,,,,,,,,,,,,,,
+662,abdominal,yes,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"338,130",10,016,84,648,"60,484","34,559",343,129,653,479,"10,738",112,759,,391,,"10,917","3,250",74
+675,BM,no, , ,disease free,neuroblastoma,disease free,"400,000",80,000,100,,,,,,,,,,,,,,,,
+680,BM,no, , ,disease free,Hodgkin Lymphoma,disease free,"200,000",83,000,100,,,,,,,,,,,,,,,,
+681,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"47,347",23,000,100,,,,,,,,,,,,,,,,
+689,BM,no, , ,disease free,B lymphoblastic lymphoma/leukemia,disease free,"419,366",75,056,44,,,,,,,,,,,,,,,,
+690,testis,yes,no,metastatic,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"164,918",51,070,30,977,642,,,,,,,,,,,,,,
+695,abdominal,yes,no, ,neuroblastoma,neuroblastoma,neuroblastoma,"1,183,064",32,019,81,855,"112,180","16,002",511,339,342,197,"11,709",194,,150,"7,183","1,372","4,799","8,159",601
+697,PB,no, ,local, ,neuroblastoma,disease free,"6,591,630",88,000,100,,,,,,,,,,,,,,,,
+725,lymph node,yes, , ,reactive,reactive,reactive,"183,434",73,000,100,"1,517","18,558",,,,,,,,,,,,,,
+726,BM,no,yes,reactive,reactive,reactive,reactive,"10,000",48,000,100,,,,,,,,,,,,,,,,
+733,ascitic fluid,no,yes,reactive,reactive,reactive,reactive,"148,024",81,000,100,,,,,,,,,,,,,,,,
+735,pleural effusion,no,yes,metastatic,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"5,446,780",56,002,98,"1,273",451,,,,,,,"33,175",674,"1,696",,,"2,875",,
+748,pelvic,yes, ,local,germ cell,germ cell,non-hematopoietic solid tumor,"936,010",20,022,72,369,"3,405",412,,252,,,"8,000",51,188,82,661,"1,387","7,266","1,500",74
+761,pleural effusion,no,yes,reactive,reactive,reactive,reactive,"1,264,830",79,000,100,"6,550",,,,,,,,,,,,,,,
+777,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"900,000",60,000,100,,,,,,,,,,,,,,,,
+801,BM,no,yes,local,disease free,Hodgkin Lymphoma,disease free,"453,274",41,000,100,,,,,,,,,,,,,,,,
+802,BM,no, , ,disease free,Hodgkin Lymphoma,disease free,"500,000",88,000,100,,,,,,,,,,,,,,,,
+805,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"700,000",17,000,100,,,,,,,,,,,,,,,,
+821,head and neck,yes, , ,nasopharyngeal carcinoma,nasopharyngeal carcinoma,non-hematopoietic solid tumor,"2,113,215",65,004,96,773,23,865,,426,,,"23,274",637,,,787,"2,220","5,149","1,706",
+828,PB,no,yes,local, ,nasopharyngeal carcinoma, ,"200,000",20,000,100,,,,,,,,,,,,,,,,
+841,thoracic,yes,yes, ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,532,33,070,30,"1,553",141,,,,,,,231,313,"8,447",,,,,
+842,pericardial effusion,no, ,local,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"2,130,428",41,093,07,"1,161",61,,,,,,,126,82,,,,,,
+850,abdominal,yes,yes, ,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,"3,357,652",08,067,33,299,"58,249",2791,,835,477,95,"10,873",175,268,15,108,,"13,052",216,
+851,PB,no,yes,local, ,Extraesqueletal Ewing Sarcoma, ,"1,508,256",83,000,100,,,,,,,,,,,,,,,,
+854,pleural effusion,no, , ,reactive,Anaplastic lymphoma,Anaplastic lymphoma,"3,390,394",90,001,99,"6,654",65,,,,,,,,"1,179",,,,,,
+859,BM,no,yes,local,disease free,Anaplastic lymphoma,disease free,"1,797,536",70,000,100,,,,,,,,,,,,,,,,
+871,abdominal,yes,yes, ,neuroblastoma,neuroblastoma,neuroblastoma,"4,301,254",36,027,73,260,"6,945","3,053",246,114,376,164,"3,584",145,177,,401,,"1,001","8,664",
+872,PB,no, ,local, ,neuroblastoma,disease free,"1,431,004",77,000,100,,,,,,,,,,,,,,,,
+875,BM,no, , ,disease free,neuroblastoma,disease free,"7,785,384",91,000,100,,,,,,,,,,,,,,,,
+880,cerebrospinal fluid,no,no,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"26,603",01,005,96,876,,,,,,,,,,,,,,,
+887,BM,no,yes,local,disease free,neuroblastoma,disease free,"1,353,118",89,000,100,,,,,,,,,,,,,,,,
+892,BM,no,yes,metastatic,disease free,B lymphoblastic lymphoma/leukemia,disease free,"874,310",88,000,100,,,,,,,,,,,,,,,,
+896,BM,no, , ,disease free,Hodgkin Lymphoma,disease free,"2,300,000",87,000,100,,,,,,,,,,,,,,,,
+903,lymph node,yes,yes, ,Hodgkin Lymphoma,Hodgkin Lymphoma,no diagnosis,"1,058,696",38,000,100,,,,,,,,,,,,,,,,
+904,PB,no,yes,local, ,Hodgkin Lymphoma, ,"3,091,863",30,000,100,,,,,,,,,,,,,,,,
+928,lymph node,yes,yes, ,Hodgkin Lymphoma,Hodgkin Lymphoma,Hodgkin Lymphoma,"5,057,900",58,001,99,"1,426",413,,,,,,,,,,,,,,
+929,PB,no, ,local, ,Hodgkin Lymphoma, ,"2,448,126",87,000,100,,,,,,,,,,,,,,,,
+952,BM,no,yes,metastatic,disease free,neuroblastoma,disease free,"3,056,016",89,000,100,,,,,,,,,,,,,,,,
+954,lymph node,yes,yes,reactive,reactive,reactive,reactive,"357,188",24,000,100,482,54,,,,,,,,,,,,,,
+960,BM,no,yes,local,disease free,neuroblastoma,disease free,"4,000,000",95,000,100,,,,,,,,,,,,,,,,
+974,lymph node,yes,yes,reactive,reactive,reactive,reactive,"100,000",41,000,100,"2,832","2,736",,,,,,,,,,,,,,
+977,pelvic,yes,yes,local,germ cell,germ cell,non-hematopoietic solid tumor,"3,567,346",35,088,12,897,279,,,848,,,,,,,,,,,
+979,lymph node,yes,yes,reactive,reactive,reactive,reactive,"448,812",12,000,100,"2,956",858,,,,,,,,,,,,,,
+1031,BM,no, , ,neuroblastoma,neuroblastoma,neuroblastoma,"7,070,612",86,000,100,233,"33,942","10,269",100,298,269,357,"3,919",191,,75,,277,"4,445",860,58
+1037,PB,no,yes,metastatic, ,neuroblastoma,disease free,"1,211,694",86,000,100,,,,,,,,,,,,,,,,
+1043,abdominal,yes, , ,neuroblastoma,neuroblastoma,neuroblastoma,"399,674",18,092,08,651,"46,076","10,100",110,113,229,445,"4,549",,"1,431",199,,"1,094","4,483","24,646",213
+1044,PB,no, ,local, ,neuroblastoma,disease free,"1,224,964",75,000,100,,,,,,,,,,,,,,,,
+1049,lymph node,yes,yes,reactive,reactive,reactive,reactive,"82,992",23,000,100,"2,169","1,542",,,,,,,,,,,,,,
+1074,abdominal,yes, , ,hemangioma,hemangioma,vascular tumor,"60,190",25,000,,149,569,"1,038",,135,,,"4,342","1,276","7,444",402,261,"3,539","2,517","32,783",541
+1075,PB,no,yes,local, ,hemangioma, ,"620,906",63,000,,,,,,,,,,,,,,,,,
+1076,abdominal,yes,yes, ,neuroblastoma,neuroblastoma,neuroblastoma,"1,139,310",80,096,04,326,"51,305","29,614",290,17,191,57,"3,320",,531,567,,751,"2,869","1,067",53
+1077,BM,no, , ,neuroblastoma,neuroblastoma,neuroblastoma,"45,890",93,054,56,807,"5,037","11,855",,,,,,,,,,,,,
+1078,PB,no, ,metastatic, ,neuroblastoma,neuroblastoma,"1,536,016",97,000,100,687,"14,233","10,921",90,,,,,,,,,,,,
+1105,PB,no, ,metastatic, ,T lymphoblastic lymphoma, ,"1,476,091",75,000,100,,,,,,,,,,,,,,,,
+1106,pleural effusion,no, , ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"1,863,628",72,,,"1,534",185,,,,,,,,,,,,,,
+1107,thoracic,yes,yes, ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"12,246",11,059,41,,,,,,,,,,,,,,,,
+1117,BM,no, , ,disease free,T lymphoblastic lymphoma,disease free,"4,022,918",91,000,100,,,,,,,,,,,,,,,,
+1141,abdominal,yes,no, ,ganglioneuroblastoma,ganglioneuroblastoma,neuroblastoma,"833,086",07,025,04,501,"77,137","57,516",562,158,444,414,"27,398",,793,12,487,,"15,080","3,633",443
+1142,lymph node,yes, ,metastatic,ganglioneuroblastoma,ganglioneuroblastoma,neuroblastoma,"1,369,682",26,037,63,289,"13,409","5,734",365,244,391,414,"55,119",554,186,87,379,,"13,471","8,837",
+1143,lymph node,yes, , ,reactive,reactive,reactive,"178,999",79,000,100,,,,,,,,,,,,,,,,
+1144,BM,no, , ,ganglioneuroblastoma,ganglioneuroblastoma,neuroblastoma,"204,832",55,032,68,966,"26,626","104,345",892,"1,031",,"1,158","66,416",,,187,,,"23,830",,
+1145,PB,no, ,reactive, ,reactive, ,"300,000",52,000,100,,,,,,,,,,,,,,,,
+1161,lymph node,yes,yes, ,reactive,reactive,reactive,"559,952",74,000,100,,,,,,,,,,,,,,,,
+1162,PB,no, ,reactive, ,reactive, ,"2,400,000",79,000,100,,,,,,,,,,,,,,,,
+1163,thoracoabdominal,yes,yes, ,Extraesqueletal Ewing Sarcoma,Extraesqueletal Ewing Sarcoma,no diagnosis,"59,280",00,,,,,,,,,,,,,,,,,,
+1164,PB,no,yes,local, ,Extraesqueletal Ewing Sarcoma, ,"1,539,438",86,000,100,,,,,,,,,,,,,,,,
+1182,lymph node,yes, , ,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"1,400,000",81,070,30,"1,525",,,,,,,,,,,,,,,
+1183,PB,no,yes,metastatic, ,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"1,281,648",64,001,99,,,,,,,,,,,,,,,,
+1184,BM,no, , ,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"909,258",72,043,57,"1,525",,,,,,,,,,,,,,,
+1212,abdominal,yes,yes, ,pheochromocytoma,pheochromocytoma,non-hematopoietic solid tumor,"527,336",10,016,84,978,"104,455","54,404",,"1,625",,,"31,032",281,"1,617",-172,"1,286","1,718","22,376","10,340",514
+1213,PB,no, ,local, ,pheochromocytoma, ,"1,985,114",91,000,100,,,,,,,,,,,,,,,,
+1238,abdominal,yes,yes, ,disease free,wilms tumor,disease free,"1,000,000",19,000,100,,,,,,,,,,,,,,,,
+1239,abdominal,yes, ,local,wilms tumor,wilms tumor,wilms tumor,"322,972",22,004,86,500,"35,428",758,624,"3,766",,"1,251","26,094","1,796",,-781,405,"1,176","17,283","18,423",185
+1245,abdominal,yes,no,local,wilms tumor,wilms tumor,wilms tumor,"1,200,000",04,003,97,425,"29,711",484,601,"1,796",316,"1,265","58,322",851,,-696,183,933,,"13,527",430
+1251,abdominal,yes,no, ,neuroblastoma,neuroblastoma,neuroblastoma,"1,379,452",30,016,14,620,"8,931","2,877",421,621,506,142,"19,761",139,"1,624",134,471,"1,073","13,978","6,229",141
+1252,abdominal,yes,yes, ,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"406,458",31,085,16,,,,,,,,,,,,,,,,
+1253,lymph node,yes, , ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"1,424,094",79,090,09,"2,938",12,,,,,,,"3,536",350,,,,,,
+1254,BM,no, , ,disease free,Burkitt Lymphoma,disease free,"300,000",76,000,100,,,,,,,,,,,,,,,,
+1255,PB,no, ,local, ,Burkitt Lymphoma,disease free,"5,565,846",85,000,100,,,,,,,,,,,,,,,,
+1259,BM,no,yes,local,reactive,T lymphoblastic lymphoma,reactive,"2,100,000",73,000,100,,,,,,,,,,,,,,,,
+1266,head and neck,yes,yes,local,nasopharyngeal carcinoma,nasopharyngeal carcinoma,no diagnosis,"156,624",39,000,100,,,,,,,,,,,,,,,,
+1292,abdominal,yes,no,local,mesoblastic nefhroma,mesoblastic nephroma,disease free,"2,035,596",45,000,07,,,,,,,,,,,,,,,,
+1301,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"5,000,000",82,000,100,,,,,,,,,,,,,,,,
+1306,abdominal,yes,no,local,wilms tumor,wilms tumor,wilms tumor,"2,464,210",24,071,29,207,"15,934",148,378,"2,384",133,"5,097","46,240",801,,811,223,,"19,636",922,
+1314,BM,no,no,metastatic,disease free,neuroblastoma,disease free,"4,067,794",83,000,100,,,,,,,,,,,,,,,,
+1322,BM,no, , ,disease free,histiocytosis,disease free,"2,500,000",83,000,100,,,,,,,,,,,,,,,,
+1323,soft tissue mass,yes,yes, ,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"36,674",07,033,67,"1,443","4,866",954,791,"6,973",,,"25,087",,,,,,"3,950",,
+1325,BM,no, ,metastatic,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"1,513,675",69,007,94,590,"10,450",70,696,"39,756",10725,338,"44,463",717,,"-2,160","4,768","1,910","4,496","1,408",296
+1351,head and neck,yes,yes,local,histiocytosis,histiocytosis,histiocytosis,"746,160",38,001,99,"10,216",249,,,,,,,,"2,019",,,,,,
+1357,BM,no, , ,disease free,ganglioneuroma,disease free,"5,702,828",79,000,100,,,,,,,,,,,,,,,,
+1362,BM,no,yes,local,disease free,Hodgkin Lymphoma,disease free,"4,073,134",93,000,100,,,,,,,,,,,,,,,,
+1363,BM,no,yes, ,disease free,neuroblastoma,disease free,"4,242,708",83,000,99,"2,613","2,300",868,,15,,,"26,782",,,,,,"49,657",,
+1378,abdominal,yes,yes,local,ganglioneuroma,ganglioneuroma,non-hematopoietic solid tumor,"6,064,825",21,086,14,245,"15,442",774,,"1,205",,,,,,,,,,,
+1382,BM,no, ,local,disease free,neuroblastoma,disease free,"5,115,300",86,000,100,,,,,,,,,,,,,,,,
+1406,thoracoabdominal,yes,yes, ,neuroblastoma,neuroblastoma,neuroblastoma,"28,650",40,030,70,488,"12,078","41,419",191,1143,,473,"33,017",,,,,,"3,076",,
+1419,BM,no,no,metastatic,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"977,398",74,002,98,488,,,,,,,,,,,,,,,
+1427,soft tissue mass,yes,yes,local,hemangioma,hemangioma,no diagnosis,"357,122",04,000,100,,,,,,,,,,,,,,,,
+1428,BM,no, , ,disease free,Burkitt Lymphoma,disease free,"4,808,312",87,000,,,,,,,,,,,,,,,,,
+1430,BM,no, ,metastatic,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,"813,850",65,008,89,"3,943",,,,,,,,,,,,,,,
+1431,abdominal,yes,yes,local,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"146,387",59,079,21,"5,040",603,,,,,,,,,,,,,,
+1438,lymph node,yes,yes, ,reactive,reactive,reactive,"969,960",88,000,100,"1,030","3,358",,,,,,,,,,,,,,
+1439,lymph node,yes,yes, ,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,"4,559,243",54,051,49,"3,898",41,,,,,,,,,,,,,,
+1445,abdominal,yes,yes, ,Clear cell Sarcoma,clear cell sarcoma,soft tissue sarcoma,"2,677,137",54,053,47,"1,018","25,397",,,,,,,,,,,,,,
+1446,PB,no, ,metastatic, ,clear cell sarcoma, ,"1,088,296",67,000,100,,,,,,,,,,,,,,,,
+1462,thoracic,yes, , ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"1,481,834",90,096,04,"1,065",38,116,,,,,,,182,,,,,,
+1468,BM,no,yes,reactive,reactive,reactive,reactive,"1,000,000",90,000,100,"2,147","4,576",,,,,,,,,,,,,,
+1474,BM,no, , ,disease free,Anaplastic lymphoma,disease free,"1,184,700",82,000,100,,,,,,,,,,,,,,,,
+1475,pleural effusion,no,yes,metastatic,Anaplastic lymphoma,Anaplastic lymphoma,Anaplastic lymphoma,"1,022,275",57,024,76,"8,920",21,,,,,,,240,,516,,,,,"-5,810"
+1481,BM,no,yes,metastatic,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"5,500,000",85,010,90,"1,039",110,,,,,,,,,,,,,,
+1484,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,Hodgkin Lymphoma,"6,337,332",76,000,100,"1,514",104,,,,,,,,,,,,,,
+1492,lymph node,yes,yes,reactive,reactive,reactive,reactive,"555,204",81,000,100,"5,339","5,332",,,,,,,,,,,,,,
+1493,abdominal,yes,yes,local,wilms tumor,wilms tumor,wilms tumor,"2,962,152",75,096,04,383,"12,528",897,312,2784,533,2132,"4,856",116,,172,107,,"12,964","4,189",
+1500,thoracic,yes,no,metastatic,wilms tumor,wilms tumor,wilms tumor,"165,776",07,091,09,170,"43,446",794,524,,183,811,"4,430",127,,509,195,,"10,488",286,
+1503,lymph node,yes,yes,reactive,reactive,reactive,reactive,"1,000,000",78,000,100,"5,058","6,036",,,,,,,,,,,,,,
+1508,BM,no, , ,disease free,neuroblastoma,disease free,"5,000,000",96,000,100,,,,,,,,,,,,,,,,
+1510,abdominal,yes,yes,local,neuroblastoma,neuroblastoma,neuroblastoma,"5,005,100",35,097,03,272,"1,146","2,497",185,1930,219,115,84,80,,19,115,,"3,117",327,
+1511,pelvic,yes,yes,metastatic,germ cell,germ cell,non-hematopoietic solid tumor,"24,544",08,013,87,"1,561","15,537","6,380",,,,,,,,,,,,,
+1512,peritoneal metastasis,yes, , ,germ cell,germ cell,non-hematopoietic solid tumor,"2,500,000",06,033,67,382,"2,137",,,,,,,,,,,,,,
+1513,ascitic fluid,no, , ,disease free,germ cell,disease free,"1,000,000",33,058,42,,,,,,,,,,,,,,,,
+1514,PB,no, , , ,germ cell, ,"2,953,028",65,000,100,,,,,,,,,,,,,,,,
+1545,urine,no,no,local,disease free,rhabdomyosarcoma,disease free,"1,352,104",54,000,100,,,,,,,,,,,,,,,,
+1549,lymph node,yes,yes,reactive,reactive,reactive,reactive,"502,274",65,000,100,,,,,,,,,,,,,,,,
+1552,pleural effusion,no,no, ,disease free,osteosarcoma,disease free,"873,655",43,000,,,,,,,,,,,,,,,,,
+1556,lymph node,yes,yes,reactive,reactive,reactive,reactive,"812,337",62,000,100,,,,,,,,,,,,,,,,
+1560,pleural effusion,no,no,local,disease free,Hodgkin Lymphoma,disease free,"2,902,278",77,003,87,,,,,,,,,,,,,,,,
+1561,pleural effusion,no, ,metastatic,disease free,osteosarcoma,disease free,"1,000,000",58,000,100,,,,,,,,,,,,,,,,
+1587,lymph node,yes, , ,reactive,reactive,reactive,"7,867,396",81,000,100,"2,972","14,470",,,,,,,,,,,,,,
+1590,PB,no,yes,reactive, ,reactive, ,"3,645,018",47,000,100,,,,,,,,,,,,,,,,
+1591,lymph node,yes,yes, ,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"7,205,796",26,061,39,"2,511",71,,,,,,,,,,,,,,
+1593,BM,no, ,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"3,964,902",87,066,34,"2,152",,,,,,,,,,,,,,,
+1596,lymph node,yes, , ,Burkitt Lymphoma,Burkitt Lymphoma,no diagnosis,"117,858",04,000,100,,,,,,,,,,,,,,,,
+1606,pericardial effusion,no, , ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"7,479,348",73,020,80,"3,227",96,"1,228",,,,,,878,229,"2,879",,,,,
+1607,BM,no,no,local,disease free,Burkitt Lymphoma,disease free,"5,268,200",81,000,100,,,,,,,,,,,,,,,,
+1608,BM,no, ,metastatic,disease free,T lymphoblastic lymphoma,disease free,"8,362,300",83,000,100,,,,,,,,,,,,,,,,
+1611,pelvic,yes,no,metastatic,germ cell,germ cell,non-hematopoietic solid tumor,"3,354,728",45,097,03,"1,000",408,,,,,,,,,,,,,,
+1612,abdominal,yes,yes,local,cystic nephroma,cystic nephroma,disease free,"326,692",11,000,82,,,,,,,,,,,,,,,,
+1625,lymph node,yes,yes,reactive,reactive,reactive,reactive,"763,620",64,000,100,,,,,,,,,,,,,,,,
+1628,lymph node,yes,yes,reactive,reactive,reactive,reactive,"2,959,764",79,000,100,"1,185","8,332",,,,,,,,,,,,,,
+1635,lymph node,yes,yes,reactive,reactive,reactive,reactive,"2,621,686",23,005,95,,,,,,,,,,,,,,,,
+1657,thoracic,yes,yes,local,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"2,270,358",80,003,97,"2,851",40,144,,,,,,174,,,,,,,
+1686,pericardic effusion,no,yes, ,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"4,775",08,001,100,628,,,,,,,,,450,,,,,,
+1687,pleural effusion,no, ,metastatic,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"3,711,971",45,048,53,"1,380","17,729",473,525,59272,1476,537,,,,,,,"12,846",,
+1690,BM,no, , ,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"2,517,680",64,020,80,238,"41,133",514,229,24038,1146,310,"38,249",740,,736,780,,"11,134",379,
+1693,lymph node,yes,yes,local,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,"1,038,375",82,002,99,"2,173",,,,,,,,,,,,,,,
+1698,abdominal,yes,yes,local,germ cell,germ cell,non-hematopoietic solid tumor,"328,275",16,001,99,"1,103",64,,,,,,,,,,,,,,
+1701,thoracic,yes,no, ,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"2,062,157",66,064,36,"1,712",71,,,,,,,"1,828",197,,,,,,
+1702,abdominal,yes,yes,local,renal carcinoma,renal carcinoma,non-hematopoietic solid tumor,"5,504,525",22,077,23,"1,174","9,846","12,260",,,,,,,,,,,,,
+1746,BM,no, , ,disease free,Hodgkin Lymphoma,disease free,"9,146,975",83,000,100,,,,,,,,,,,,,,,,
+1747,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,Hodgkin Lymphoma,"24,990,600",78,000,100,"4,332",,,,,,,,,,,,,,,
+1756,pelvic,yes,yes, ,germ cell,germ cell,non-hematopoietic solid tumor,"7,310,075",06,005,95,"1,446",-213,"2,688",,"1,765",,,"2,726",250,"1,729",,199,,,"3,303",
+1759,BM,no,yes,local,disease free,Burkitt Lymphoma,disease free,"4,647,475",28,000,100,,,,,,,,,,,,,,,,
+1762,pelvic,yes, ,local,germ cell,germ cell,non-hematopoietic solid tumor,"7,310,075",08,004,96,985,203,381,,,,,"1,323",376,,"1,068",356,,"6,329","2,224",
+1763,thoracic,yes,yes,reactive,reactive,reactive,reactive,"69,550",06,000,100,,,,,,,,,,,,,,,,
+1764,thoracic,yes,yes,local,undiferenciated malignant neoplasm,undiferenciated malignant neoplasm,soft tissue sarcoma,"2,400,275",04,011,89,"1,004","8,498","3,595",,,,,574,213,,105,241,,"15,182",402,
+1789,abdominal,yes,yes,local,pseudopapilary pancreatic solid tumor,pseudopapilary pancreatic solid tumor,non-hematopoietic solid tumor,"3,752,750",40,096,04,"1,124","42,899","1,527",,,,,"36,998","3,192",,194,440,,"13,065",133,
+1810,bone,yes,yes,metastatic,osteosarcoma,osteosarcoma,non-hematopoietic solid tumor,"148,350",13,017,83,"1,993","6,170","14,614",,,,,"1,955",349,,"1,023",387,,"5,669",413,383
+1815,thoracic,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,Hodgkin Lymphoma,"11,000,000",78,000,100,"2,958",30,,,,,,,,,,,,,,
+1903,BM,no,yes,reactive,reactive,reactive,reactive,"3,100,000",84,000,100,,,,,,,,,,,,,,,,
+1920,abdominal,yes,yes, ,neuroblastoma,neuroblastoma,neuroblastoma,"561,575",19,018,82,98,"68,780","51,263",552,862,280,84,178,399,,"-5,938",250,,"10,090","1,479",179
+1921,PB,no, ,metastatic, ,neuroblastoma, ,"3,568,850",55,000,100,356,"6,382","50,797",,,,,,,,,,,,,
+1925,thoracic,yes,yes,metastatic,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"166,700",70,099,01,822,111,,,,,,,"2,106",,,,,,,230
+1928,BM,no,yes,reactive,reactive,reactive,reactive,"10,000,000",71,000,100,,,,,,,,,,,,,,,,
+1928,PB,no, , , ,reactive, ,"2,158,525",90,000,100,,,,,,,,,,,,,,,,
+1931,BM,no, , ,neuroblastoma,neuroblastoma,neuroblastoma,"5,000,000",86,000,99,470,"56,885","11,108","1,322",4328,549,487,,,,,,,,,
+1941,PB,no, , , ,wilms tumor, ,"3,746,475",75,000,100,,,,,,,,,,,,,,,,
+1942,pelvic,yes,yes,local,wilms tumor,wilms tumor,wilms tumor,"2,441,650",55,002,99,"1,560","2,461","1,931","2,220",12318,693,992,"2,631","2,461",,425,695,,"9,702","2,503",
+1943,PB,no,yes,local, ,germ cell, ,"5,000,000",74,000,100,,,,,,,,,,,,,,,,
+1952,pleural effusion,no,yes, ,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,"1,909,150",27,001,99,"2,755",-73,,,,,,,,,"1,125",,,,,
+1953,BM,no, ,local,disease free,Diffuse Large B cell Lymphoma,disease free,"1,396,050",89,000,100,"2,859","3,388",,,,,,,,,-133,,,,,
+1958,lymph node,yes,yes, ,reactive,reactive,reactive,"27,850",01,000,100,,,,,,,,,,,,,,,,
+1959,BM,no, ,reactive,reactive,reactive,reactive,"10,026,876",76,000,100,,,,,,,,,,,,,,,,
+1963,BM,no, , ,disease free,Burkitt Lymphoma,disease free,"10,000,000",85,000,15,,,,,,,,,,,,,,,,
+1963,PB,no, , , ,Burkitt Lymphoma, ,"8,455,375",85,000,,,,,,,,,,,,,,,,,
+1964,BM,no, , ,neuroblastoma,neuroblastoma,neuroblastoma,"5,000,000",60,001,99,363,"2,551",446,429,577,"1,014",279,,,,,,,,,
+1964,PB,no, , , ,neuroblastoma, ,"2,129,700",61,000,99,,,,,,,,,,,,,,,,
+1965,abdominal,yes,yes,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"589,250",81,093,,"3,971",29,254,504,,504,381,,,,,,,,,
+1979,abdominal,yes,yes,metastatic,neuroblastoma,neuroblastoma,neuroblastoma,"67,300",02,009,92,524,"37,502","46,814",787,1388,"1,597",856,"1,410",733,,,569,,"10,436","1,862",
+1988,BM,no,yes,metastatic,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"1,956,789",75,033,77,"1,198",,,,,,,,,,,,,,,
+2017,abdominal,yes,yes,reactive,reactive,reactive,reactive,"297,700",40,000,100,,,,,,,,,,,,,,,,
+2042,pelvic,yes,yes,local,neuroblastoma,neuroblastoma,neuroblastoma,"3,356,875",16,076,24,854,"1,342","2,949",948,634,281,209,"3,227",49,,812,709,,"7,170",343,
+2049,pelvic,yes,yes,metastatic,thyroid-like follicular carcinoma of kidney,thyroid-like follicular carcinoma of kidney,non-hematopoietic solid tumor,"46,775",15,010,90,506,14,124,,,,,,,,,,,,,
+2050,PB,no, , , ,thyroid-like follicular carcinoma of kidney, ,"1,783,775",90,000,100,,,,,,,,,,,,,,,,
+2092,head and neck,yes,no,metastatic,T lymphoblastic lymphoma,T lymphoblastic lymphoma,T lymphoblastic lymphoma,"305,725",37,090,10,"4,829","52,983",496,,,,,,,,"8,315",,,,,
+2093,lymph node,yes,yes, ,Diffuse Large B cell Lymphoma,Diffuse Large B cell Lymphoma,no diagnosis,"13,855,000",70,000,100,,,,,,,,,,,,,,,,
+2096,head and neck,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,Hodgkin Lymphoma,"1,282,175",77,000,100,"4,643",438,,,,,,,,,,,,,,
+2107,BM,no, ,local,disease free,Diffuse Large B cell Lymphoma,disease free,"3,817,650",84,000,100,,,,,,,,,,,,,,,,
+2116,BM,no, , ,disease free,B lymphoblastic lymphoma/leukemia,disease free,"10,103,295",89,000,100,,,,,,,,,,,,,,,,
+2123,testis,yes,no,metastatic,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,B lymphoblastic lymphoma/leukemia,"23,344",18,010,90,"10,510",,,,,,,,647,584,"1,216",,,"2,107",,
+2129,pleural effusion,no,yes, ,reactive,reactive,reactive,"589,125",76,000,100,,,,,,,,,,,,,,,,
+2130,PB,no, ,reactive, ,reactive, ,"2,379,125",86,000,100,,,,,,,,,,,,,,,,
+2180,head and neck,yes,yes, ,rhabdomyosarcoma,rhabdomyosarcoma,rhabdomyosarcoma,"2,821,425",39,042,58,654,"19,098","12,456",5272,27548,683,351,824,431,,,502,,"12,381","3,438",609
+2181,BM,no, , ,disease free,rhabdomyosarcoma,disease free,"5,000,000",78,002,98,"1,320",275,"2,414",,,,,,,,,,,,,
+2182,PB,no, ,metastatic, ,rhabdomyosarcoma, ,"3,545,000",78,000,100,,,,,,,,,,,,,,,,
+2192,lymph node,yes,yes,reactive,reactive,reactive,reactive,"27,475",08,000,100,,,,,,,,,,,,,,,,
+2194,bone,yes,yes,reactive,reactive,reactive,reactive,"535,025",70,000,100,,,,,,,,,,,,,,,,
+2204,thoracic,yes,yes, ,malignant nerve sheath tumor,malignant nerve sheath tumor,malignant nerve sheath tumor,"4,811,875",23,015,86,827,"36,418","19,834","5,441",,712,,"5,473","8,643",,480,378,,"31,341","14,771",548
+2209,thoracic,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,non-hematopoietic solid tumor,"609,450",42,004,97,"1,704","1,019","6,618",,,,,"4,323","1,013",,"5,269",767,,"17,150","9,619",634
+2210,BM,no, , ,disease free,Hodgkin Lymphoma,disease free,"5,000,000",97,000,100,,,,,,,,,,,,,,,,
+2211,PB,no, ,metastatic, ,malignant nerve sheath tumor, ,"5,000,000",81,000,100,,,,,,,,,,,,,,,,
+2217,lymph node,yes,yes,local,Hodgkin Lymphoma,Hodgkin Lymphoma,Hodgkin Lymphoma,"2,308,750",78,000,99,"8,774",00,,,,,,,,,,,,,,
+2226,thoracic,yes,yes, ,T-cell/histiocyte rich B cell lymphoma,T-cell/histiocyte rich B cell lymphoma,no diagnosis,"5,734,675",28,000,100,,,,,,,,,,,,,,,,
+2228,PB,no, ,metastatic, ,T-cell/histiocyte rich B cell lymphoma, ,"1,343,925",75,003,78,,,,,,,,,,,,,,,,
+2229,pleural effusion,no,yes, ,disease free,T-cell/histiocyte rich B cell lymphoma,disease free,"5,520,124",03,000,100,,,,,,,,,,,,,,,,
+2236,head and neck,yes,yes,local,neurofibroma,neurofibromatose,non-hematopoietic solid tumor,"1,665,175",16,004,96,767,"18,954","4,758",,"62,897",,,"2,174","4,610","9,841",437,240,,"14,338",522,422
+2251,BM,no, , ,reactive,reactive,reactive,"850,875",65,000,100,,,,,,,,,,,,,,,,
+2255,lymph node,yes,yes,metastatic,Burkitt Lymphoma,Burkitt Lymphoma,Burkitt Lymphoma,"1,178,550",83,096,04,"1,036",140,751,,781,,,,748,284,"8,235",,,,,
+2256,lymph node,yes,yes,reactive,reactive,reactive,reactive,"4,550",14,000,100,,,,,,,,,,,,,,,,
+2257,lymph node,yes,yes,reactive,reactive,reactive,reactive,"6,306,425",37,000,100,,,,,,,,,,,,,,,,
+2272,ascitic fluid,no,yes, ,Anaplastic lymphoma,Anaplastic lymphoma,Anaplastic lymphoma,"564,750",79,005,95,"4,464",21,,,,,,,,,,,,,,
+2275,BM,no, ,metastatic,Anaplastic lymphoma,Anaplastic lymphoma,Anaplastic lymphoma,"21,693,800",87,000,100,"3,995",68,787,,,,,,,,,,,,,
+2296,PB,no,yes, , ,Anaplastic lymphoma, ,"6,400,000",84,050,51,"1,127",24,288,,,,,,20,139,,,,,,136
+2307,BM,no, ,metastatic,Anaplastic lymphoma,Anaplastic lymphoma,Anaplastic lymphoma,"5,500,000",88,043,57,"8,742",17,158,,,,,,,,,,,,,
+2309,lymph node,yes,yes,local,histiocytosis,histiocytosis,histiocytosis,"2,418,675",71,000,100,"4,741",198,,,,,,,,,,,,,,
